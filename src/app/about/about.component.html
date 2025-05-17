@@ -1,0 +1,185 @@
+<!-- about top img -->
+
+<app-title [title]="'About Us'" [link]="'/home'" [page1]="'Home'" [page2]="'About Us'" />
+
+
+
+
+<!-- about intro -->
+
+<section id="aboutdetails">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-6">
+
+                <h3>about our restaurant food & drinkes</h3>
+                <!-- <img src="/imgs/divider-5318234_1920.png" width="50" alt=""> -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in
+                    suscipit erat sodales id. Nullam ultricies eu turpis at accumsan.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in
+                    suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                    Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at
+                    accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat
+                    nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales
+                    id. Nullam ultricies eu turpis at accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.</p>
+            </div>
+            <div class="col-6">
+                <carousel [noPause]="false" [isAnimated]="true" [showIndicators]="false" >
+                    <slide >
+                      <img src="/imgs/Untitled.jpg" alt="First slide" class="d-block w-100">
+                     
+                    </slide>
+                    <slide>
+                      <img src="/imgs/bg1.jpg" alt="Second slide" class="d-block w-100" >
+                     
+                    </slide>
+                    <slide>
+                      <img src="/imgs/bg2.jpg" alt="Third slide" class="d-block w-100">
+                     
+                    </slide>
+                  </carousel>
+
+
+                  <!--
+                    <div class="aboutimg">
+                    <div class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/imgs/Untitled.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imgs/bg1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imgs/bg2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- why choose us  -->
+
+<section id="whyus">
+    <div class="container">
+        <div class="row pb-5 justify-content-center">
+            <div class="col-sm-12 text-center">
+                <h2 class="pt-5 headings">Why Choose Us</h2>
+                <div class="dividerimg">
+                    <img src="/imgs/divider-5318234_1920.png" alt="" loading="lazy">
+                </div>
+                <p class="mt-0 ms-5 me-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    doloremque sapiente suscipit ipsam velit exercitationem um a nostrum fuga temporibus, sit,
+                    corrupti dolore ut assumenda vero?</p>
+            </div>
+            <div class="col-12">
+                <div class="choseusimg py-3">
+                    <img class="img-fluid" src="/imgs/Capture.PNG" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="icon pt-5 my-3">
+                    <img src="/imgs/chef.png" alt="">
+                    <h3>best chef</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae purus diam. Quisque vel
+                        elementum ligula. </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="icon pt-5 my-3">
+                    <img src="/imgs/lounge.png" alt="">
+                    <h3>150 Tables</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae purus diam. Quisque vel
+                        elementum ligula.</p>
+                </div>
+            </div>
+            <div class="col-4 pt-5 my-3">
+                <div class="icon">
+                    <img src="/imgs/man-throwing-paper-in-recycle-container.png" alt="">
+                    <h3>Clean Environment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae purus diam. Quisque vel
+                        elementum ligula. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!--  chef -->
+
+
+<section id="ourchefs" class="position-relative pb-5 ">
+    <div class="container">
+        <div class="row  justify-content-center">
+
+            <div class="col-sm-12 text-center">
+                <h2 class="pt-5 headings">Our Chefs</h2>
+                <div class="dividerimg">
+                    <img src="/imgs/divider-5318234_1920.png" alt="">
+                </div>
+                <p class="mt-0 ms-5 me-5 mb-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    doloremque sapiente suscipit ipsam velit exercitationem um a nostrum fuga temporibus, sit,
+                    corrupti dolore ut assumenda vero?</p>
+            </div>
+            <div class="col-3">
+                <app-ourshefs   [chefdata]="{
+                    imgurl: '/imgs/chef1.jpg', 
+                    name: 'Chef John Doe', 
+                    links: ['', '','',''], 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus? Optio eveniet libero rerum nobis vitae, '
+                  }"/>
+          
+         
+            </div>
+            <div class="col-3">
+                <app-ourshefs   [chefdata]="{
+                    imgurl: '/imgs/chef1.jpg', 
+                    name: 'Chef John Doe', 
+                    links: ['', '','',''], 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus? Optio eveniet libero rerum nobis vitae, '
+                  }"/>
+          
+         
+            </div>
+
+            <div class="col-3">
+                <app-ourshefs   [chefdata]="{
+                    imgurl: '/imgs/chef1.jpg', 
+                    name: 'Chef John Doe', 
+                    links: ['', '','',''], 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus? Optio eveniet libero rerum nobis vitae, '
+                  }"/>
+          
+         
+            </div>
+
+            <div class="col-3">
+                <app-ourshefs   [chefdata]="{
+                    imgurl: '/imgs/chef1.jpg', 
+                    name: 'Chef John Doe', 
+                    links: ['', '','',''], 
+                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus? Optio eveniet libero rerum nobis vitae, '
+                  }"/>
+          
+         
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+<app-newsletter />

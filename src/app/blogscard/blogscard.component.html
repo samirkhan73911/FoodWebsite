@@ -1,0 +1,16 @@
+<div class="card  align-items-center justify-content-center">
+
+    <img class="img-fluid" [src]="blogdata.imgurl" alt="img" title="img" loading="lazy">
+
+    <div class="card-body cardbodyBgClr p-3 ">
+        <h3 class="card-text text-start cardtitle mt-3">{{blogdata.title}}Blog Title Here</h3>
+        <p class="my-3 ourblogdescrption ">{{blogdata.ourblogdescrption}}May 15, 2017 / By admin / 3 Comments</p>
+        <p class="card-text text-start carddescrption">{{blogdata.carddescrption}}Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+            Nullam ultricies eu turpis at accumsan...</p>
+        <a class="btn ourblogsbtn btn-md my-3 text-nowrap" [href]="blogdata.link">
+            READ MORE
+
+        </a>
+    </div>
+</div>

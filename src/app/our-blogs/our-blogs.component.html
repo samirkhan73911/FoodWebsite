@@ -1,0 +1,136 @@
+<app-title [title]="'Our Blog'" [link]="'/home'" [page1]="'Home'" [page2]="'Our Blog'" />
+<section id="blogs" class=" ourblogsimgright ">
+    <div class="ourblogsimgleft">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-sm-12 text-center">
+                    <h2 class="pt-5 headings">Our Blog</h2>
+                    <div class="dividerimg">
+                        <img src="/imgs/divider-5318234_1920.png" alt="" loading="lazy">
+                    </div>
+                    <p class="mt-0 ms-5 me-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                        doloremque sapiente suscipit ipsam velit exercitationem um a nostrum fuga temporibus, sit,
+                        corrupti dolore ut assumenda vero?
+                    </p>
+
+                </div>
+
+                <div class="row  justify-content-center">
+
+                    <div class="col-12 ">
+                        <div class="row pb-5">
+                            <div class="col-4 my-4">
+                                <app-blogscard [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+                                                             title: 'Blog Title Here',
+                                                             ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
+                                                             carddescrption: 'Lorem ipsum dolor sit amet, consectetur
+                                                                 adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                                                                 Nullam ultricies eu turpis at accumsan...',
+                                                             link: ''}" />
+                            </div>
+                            
+                            <div class="col-4 my-4">
+                                <app-blogscard [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+                                                            title: 'Blog Title Here',
+                                                            ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
+                                                            carddescrption: 'Lorem ipsum dolor sit amet, consectetur
+                                                                        adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                                                                        Nullam ultricies eu turpis at accumsan...',
+                                                            link: ''}" />
+                            </div>
+                            
+                            <div class="col-4 my-4">
+                                <app-blogscard [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+                                                            title: 'Blog Title Here',
+                                                            ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
+                                                            carddescrption: 'Lorem ipsum dolor sit amet, consectetur
+                                                                        adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                                                                        Nullam ultricies eu turpis at accumsan...',
+                                                            link: ''}" />
+                            </div>
+                            
+                            <div class="col-4 my-4">
+                                <app-blogscard [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+                                                            title: 'Blog Title Here',
+                                                            ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
+                                                            carddescrption: 'Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                                                                Nullam ultricies eu turpis at accumsan...',
+                                                            link: ''}" />
+                            </div>
+                            
+                            <div class="col-4 my-4">
+                                <app-blogscard [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+                                                                            title: 'Blog Title Here',
+                                                                            ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
+                                                                            carddescrption: 'Lorem ipsum dolor sit amet, consectetur
+                                                                                        adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                                                                                        Nullam ultricies eu turpis at accumsan...',
+                                                                            link: ''}" />
+                            </div>
+                            
+                            <div class="col-4 my-4">
+                                <app-blogscard [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+                                                                            title: 'Blog Title Here',
+                                                                            ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
+                                                                            carddescrption: 'Lorem ipsum dolor sit amet, consectetur
+                                                                                        adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
+                                                                                        Nullam ultricies eu turpis at accumsan...',
+                                                                            link: ''}" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-4 ">
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <form action="" class="position-relative">
+                                    <input class="" type="text" placeholder="Search">
+                                    <button> <img src="/imgs/search(1).png" alt=""></button>
+                                </form>
+                            </div>
+                            <div class="col-12">
+                                <h3>Recent Blogs Posts</h3>
+                                <ul class="list-inline">
+                                   <li class="list-item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12  py-3 text-center d-flex justify-content-center">
+                        <pagination  [totalItems]="77"
+                        previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
+             
+            </pagination>
+                        <!-- <nav aria-label="Page navigation example ">
+                            <ul class="pagination pagination-lg justify-content-center gap-2">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav> -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<app-newsletter />
+<app-testimonal />
