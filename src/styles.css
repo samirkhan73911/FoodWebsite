@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
 
---main-theme-color:#e43c09;
+--main-theme-color:#e54c2a;
 
 }
 .borderclr{
@@ -284,7 +284,7 @@ body {
     background: url("/imgs/bg-big-left.png") no-repeat left bottom;
   }
   
-  .ourmenucard img {
+  .ourmenucardimg {
     object-fit: contain;
     width: 150px;
     height: 180px;
@@ -293,6 +293,8 @@ body {
   
   .ourmenucard {
     width: 545px;
+    height: auto;
+    padding: 0px 13px 0px 16px;
   }
   .ourmenuPrice {
     font-family: "Lato", sans-serif;
@@ -305,11 +307,7 @@ body {
     top: 30px;
     right: 30px;
   }
-  
-  .menucardsize {
-    height: auto;
-    padding: 0px 13px 0px 16px;
-  }
+
   .menucardtitle {
     font-family: "Lato", sans-serif;
     font-size: 18px;
@@ -465,7 +463,7 @@ body {
   /* newsletter section*/
   
   #newsletter {
-    background-color: #f5410a;
+    background-color: var(--main-theme-color);
     color: white;
   }
   #newsletter input {
@@ -475,7 +473,8 @@ body {
     border: 0;
     border-radius: 4px;
     padding: 16px;
-    border: 1px solid #f5410a !important;
+    /* border: 1px solid var(--main-theme-color) !important; */
+     border: 1px solid  #f5410a !important;
   }
   
   
@@ -488,7 +487,7 @@ body {
     margin: 0px 0px 4px 10px;
   }
   #newsletter a:hover {
-    color: #f5410a;
+    color: var(--main-theme-color);
   
     background-color: white;
   }
@@ -527,7 +526,7 @@ body {
     align-items: center;
   }
   footer .outercolor {
-    background-color: #f5410a;
+    background-color: var(--main-theme-color);
   }
   
   footer .inner ul {

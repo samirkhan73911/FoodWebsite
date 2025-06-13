@@ -9,6 +9,8 @@ import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { Page404Component } from './page404/page404.component';
+import { ThankYoupageComponent } from './thank-youpage/thank-youpage.component';
 
 
 export const routes: Routes = [
@@ -52,6 +54,14 @@ export const routes: Routes = [
     {
         path:"reservation",
         component:ReservationComponent
+    },
+    {
+        path:"page404",
+        component:Page404Component
+    },
+    {
+        path:"ThankYoupage",
+        component:ThankYoupageComponent
     },
    
 ];
