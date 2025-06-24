@@ -11,6 +11,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { ReservationComponent } from './reservation/reservation.component';
 import { Page404Component } from './page404/page404.component';
 import { ThankYoupageComponent } from './thank-youpage/thank-youpage.component';
+import { CartComponent } from './cart/cart.component';
 
 
 export const routes: Routes = [
@@ -38,6 +39,10 @@ export const routes: Routes = [
     {
         path:"contactus",
         component:ContactUsComponent
+    },
+    {
+        path:"cart",
+        component:CartComponent
     },
     {
         path:"login",

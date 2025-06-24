@@ -1,0 +1,51 @@
+<app-title [title]="'Shopping Cart'" [link]="'/home'" [page1]="'Home'" [page2]="'Shopping Cart'" />
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+
+            <ul class="nav nav-pills justify-content-between p-3  m-3 " role="tablist">
+
+                <li class="nav-item ">
+                    <button class="nav-link active  " id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                        type="button" role="tab" aria-controls="all" aria-selected="true"><span class="bg-dark-subtle rounded-circle fs-4">1</span></button>
+                    <!-- <a ></a> -->
+                      shopping cart
+                </li>
+
+                <li class="nav-item ">
+                    <button class="nav-link " id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast"
+                        type="button" role="tab" aria-controls="breakfast-tab" aria-selected="true"><span class=" bg-dark-subtle rounded-circle fs-4 ">2</span> </button>
+                        shopping info
+                    <!-- <a class=" text-dark nav-link hilight" href="#breakfast" data-toggle="tab">breakfast</a> -->
+                </li>
+
+                <li class="nav-item ">
+                    <button class="nav-link  bg-dark-subtle rounded-circle fs-4 " id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch"
+                        type="button" role="tab" aria-controls="lunch" aria-selected="true"><span class="bg-dark-subtle rounded-circle fs-4">3</span> </button>
+                        payment method
+                    <!-- <a class="  text-dark nav-link hilight" href="#lunch" data-toggle="tab">lunch</a> -->
+                </li>
+ 
+              
+            </ul>
+          <div class="border-top border-2 border-dark-subtle mx-5 position-relative  bottom-50 z-n1">
+            
+          </div>
+        </div>
+
+        <div class="col-md-12 tab-content">
+
+            <div id="all" class="row tab-pane active" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+
+                <div class="col-6 my-3">
+                    <app-foodcard [isMenuCard]="true" [fooddata]="['/imgs/pngegg(1).png', 'Dish Name Here',
+                            'Cursus / Dictum / Risus',
+                            'Lorem ipsum is simply dummy text of the printing and type setting industry.',
+                            '100$']" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-newsletter />
