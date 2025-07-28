@@ -1,0 +1,94 @@
+
+  footer {
+    font-size: 14px;
+    font-family: "Lato", "sans serf";
+  }
+ 
+
+  footer .outercolor {
+    background-color: var(--main-theme-color);
+  }
+  
+  .inner h5 {
+    color: #333;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0px 0 30px;
+    text-transform: uppercase;
+    line-height: 12px;
+  }
+  
+   .inner li {
+    line-height: 22px;
+    padding: 0px 0px 10px;
+  }
+  
+  footer a {
+    color: black;
+  }
+  footer a:hover {
+    color:  var(--main-theme-color);
+  }
+  
+  footer .scoial img {
+    filter: invert(1);
+    width: 18px;
+  }
+  
+  /* .inner span {
+    margin: 0px 6px 0px -22px;
+  } */
+  .inner span img {
+    width: 15px;
+    filter: drop-shadow(1px 1px 1px #000);
+  }
+  
+  .insta img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+  }
+  .insta ul li {
+    padding: 0;
+  }
+
+
+  
+  @media (max-width:1199.98px) {
+
+    .inner h5{
+        font-size:19px !important;
+    }
+   }
+
+  @media (max-width:991.98px) {
+
+    .outercolor p{
+        font-size:11px !important;
+    }
+     .inner h5{
+        font-size:16px !important;
+    }
+   }
+
+     @media  (max-width:766.98px){
+
+   
+     .inner h5{
+        font-size:16px !important;
+         margin: 0px 0 15px !important;
+    }
+ 
+
+   }
+   
+   @media (max-width:576px){
+
+    .outercolor p{
+        font-size:14px !important;
+    }
+     .inner h5{
+        font-size:16px !important;
+    }
+
+   }

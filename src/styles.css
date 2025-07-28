@@ -4,14 +4,22 @@
 --main-theme-color:#e54c2a;
 
 }
-.borderclr{
-  border-color: var(--main-theme-color) !important;
-}
+
 
 body {
     font-family: "Lato", sans-serif;
   }
   
+
+  .bgclrprimary{
+    background-color:var(--main-theme-color) !important; 
+  }
+  .colorprimary{
+    color:var(--main-theme-color) !important; 
+  }
+.borderclrprimary{
+  border-color: var(--main-theme-color) !important;
+}
   
   /* -----------index page css  start -----------   */
   
@@ -21,7 +29,8 @@ body {
   
   .logo {
     width: 80px;
-    height: 80px;
+    height: auto;
+    transition: all 0.5s ease;
   }
   
   .cartbtn svg {
@@ -74,10 +83,7 @@ body {
   .dropdown-item:active {
     background-color: #e43c0914 !important;
   }
-  .header {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100px;
-  }
+  
   .headings {
     font-family: "Great Vibes", cursive;
     font-size: 36px;
@@ -506,80 +512,7 @@ body {
     color: rgb(255, 255, 255);
   }
   
-  /* footer section*/
   
-  footer {
-    font-size: 15px;
-    font-family: "Lato", "sans serf";
-  }
-  footer .inner {
-    padding: 60px 0 60px;
-  }
-  footer .outer img {
-    width: 60px;
-  }
-  footer .outer {
-    width: 80%;
-    height: 70px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .outercolor {
-    background-color: var(--main-theme-color);
-  }
-  
-  footer .inner ul {
-    margin: 0;
-  }
-  footer .inner li {
-    padding: 0 0 20px;
-    line-height: 14px;
-  }
-  footer .inner li:last-child {
-    padding: 0 0 0px;
-  }
-  footer h5 {
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 30px;
-    text-transform: uppercase;
-    line-height: 12px;
-  }
-  
-  footer .contact li {
-    line-height: 22px;
-  }
-  
-  footer a {
-    color: black;
-  }
-  footer a:hover {
-    color: rgb(224, 97, 29);
-  }
-  
-  footer .scoial img {
-    filter: invert(1);
-    width: 18px;
-  }
-  
-  .inner span {
-    margin: 0px 6px 0px -22px;
-  }
-  .inner span img {
-    width: 15px;
-    filter: drop-shadow(1px 1px 1px #000);
-  }
-  
-  .insta img {
-    width: 75px;
-    height: 72px;
-    object-fit: cover;
-  }
-  .insta ul li {
-    padding: 0;
-  }
   
   .dividerimg img {
     margin-top: -15px;
