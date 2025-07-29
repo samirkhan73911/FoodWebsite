@@ -20,18 +20,18 @@ body {
 .borderclrprimary{
   border-color: var(--main-theme-color) !important;
 }
-  
+  .logo {
+    max-width: 200px;
+    height: auto;
+    transition: all 0.5s ease;
+  }
   /* -----------index page css  start -----------   */
   
   #main-nav .nav-item a:hover{
     color: var(--main-theme-color) !important;
   }
   
-  .logo {
-    width: 80px;
-    height: auto;
-    transition: all 0.5s ease;
-  }
+  
   
   .cartbtn svg {
     width: 15px;
