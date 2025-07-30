@@ -33,57 +33,7 @@ body {
   
   
   
-  .cartbtn svg {
-    width: 15px;
-    height: 15px;
-    margin: 0px 10px 5px 0px;
-  }
-  .cartbtn {
-    margin: 0px;
-    color: white !important;
-    border: none;
-    font-size: 15px;
-    transition: ease-in-out 0.5s color;
-  }
-  .cartbtn:hover {
-    color:var(--main-theme-color) !important;
-    background-color: transparent;
-    border: none;
-  }
-  .cartbtn:active {
-    color: var(--main-theme-color) !important;
-    background-color: transparent;
-    border: none;
-  }
-  .dropdownbtn svg {
-    width: 15px;
-    height: 15px;
-    margin: 0px 10px 5px 0px;
-  }
-  .dropdownbtn {
-    margin: 0px;
-    color: white !important;
-    border: none;
-    font-size: 15px;
-    transition: ease-in-out 0.5s color;
-  }
-  .dropdownbtn:hover {
-    color: var(--main-theme-color) !important;
-    background-color: transparent;
-    border: none;
-  }
-  .dropdownbtn:active {
-    color:var(--main-theme-color) !important;
-    background-color: transparent;
-    border: none;
-  }
-  .dropdown-item:hover {
-    color: var(--main-theme-color) !important;
-  }
-  .dropdown-item:active {
-    background-color: #e43c0914 !important;
-  }
-  
+ 
   .headings {
     font-family: "Great Vibes", cursive;
     font-size: 36px;
