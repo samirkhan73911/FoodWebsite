@@ -1,0 +1,67 @@
+.Reservationbghome {
+  background: url("/imgs/reservation_bg.jpg") no-repeat center center/cover;
+}
+.Reservationbg {
+  /* padding: 50px; */
+  background-size: 450px;
+}
+
+
+.Reservationbtn {
+  background-color: var(--main-theme-color);
+  color: white;
+  padding: 9px;
+  border-radius: 5px;
+  width: 140px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 34px;
+  font-family: "sans serf";
+  transition: color 0.5s ease, background-color 0.5s ease;
+  border: 1px solid var(--main-theme-color);
+
+  &:hover {
+    background-color: white;
+    color: var(--main-theme-color);
+  }
+
+
+}
+
+.description{
+  margin: 0 10% 24px;
+}
+
+
+@media (max-width: 1199.98px) {
+  .Reservationbtn {
+
+
+  height:45px;
+  font-size: 14px;
+    line-height: 23px;
+     padding: 7px;
+
+}
+}
+@media (max-width: 766.98px) {
+  .Reservationbtn {
+
+  width: 140px;
+  height:35px;
+  font-size: 14px;
+    line-height: 23px;
+     padding: 7px;
+
+}
+
+}
+
+@media (max-width: 576px) {
+
+  
+
+}
+@media (max-width: 400px) {
+}

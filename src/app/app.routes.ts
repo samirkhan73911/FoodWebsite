@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { OurMenuComponent } from './pages/our-menu/our-menu.component';
+import { OurBlogsComponent } from './pages/our-blogs/our-blogs.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { ForgetPasswordComponent } from './pages/forget-password/forget-password.component';
+import { ReservationComponent } from './pages/reservation/reservation.component';
+import { Page404Component } from './pages/page404/page404.component';
+import { ThankYoupageComponent } from './pages/thank-youpage/thank-youpage.component';
 
-import { OurMenuComponent } from './our-menu/our-menu.component';
-import { OurBlogsComponent } from './our-blogs/our-blogs.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { HomeComponent } from './home/home.component';
-import { ForgetPasswordComponent } from './forget-password/forget-password.component';
-import { ReservationComponent } from './reservation/reservation.component';
-import { Page404Component } from './page404/page404.component';
-import { ThankYoupageComponent } from './thank-youpage/thank-youpage.component';
-import { CartComponent } from './cart/cart.component';
 
 
 export const routes: Routes = [

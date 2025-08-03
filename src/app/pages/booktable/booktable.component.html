@@ -1,0 +1,121 @@
+<section id="Reservation" [ngClass]="{'Reservationbg':reservationPage,' Reservationbghome':!reservationPage}">
+    <div class="container">
+        <div class="row  justify-content-center">
+
+            <div class="col-sm-12 text-center">
+                <h2 class=" headings" [ngClass]="{'text-light':!reservationPage}">Book Your
+                    Table</h2>
+                <div class="dividerimg " [ngClass]="{'inverted':!reservationPage}">
+                    <img src="/imgs/divider-5318234_1920.png" alt="" loading="lazy">
+                </div>
+                <p class="mt-0  mb-3 description "
+                    [ngClass]="{'colorgray':reservationPage,'text-light':!reservationPage}">Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                    Saepe doloremque sapiente suscipit ipsam velit exercitationem um a nostrum fuga temporibus, sit,
+                    corrupti dolore ut assumenda vero?
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="col-12 ">
+            <form class="row">
+
+                <div class="col-12 col-sm-6 col-md-4 g-2">
+
+                    <div class="input-group mb-3 position-relative">
+                        <span class="inputicon">
+                            <img [ngClass]="{'inverted':!reservationPage}" src="/imgs/user(1).png" alt=""
+                                loading="lazy">
+
+                        </span>
+                        <input type="text" class="form-control text-start input"
+                            [ngClass]="{'text-light white bginput':!reservationPage}" id="FullName" placeholder="NAME"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 g-2">
+
+                    <div class="input-group mb-3 position-relative">
+                        <span class="inputicon">
+
+                            <img [ngClass]="{'inverted':!reservationPage}" src="/imgs/email.png" alt="" loading="lazy">
+                        </span>
+                        <input type="email" class="form-control text-start input"
+                            [ngClass]="{'text-light white bginput':!reservationPage}" id="email" placeholder="EMAIL"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 g-2">
+
+                    <div class="input-group mb-3 position-relative">
+                        <span class="inputicon">
+
+                            <img [ngClass]="{'inverted':!reservationPage}" src="/imgs/telephone.png" alt=""
+                                loading="lazy">
+                        </span>
+                        <input type="phone" class="form-control text-start input"
+                            [ngClass]="{'text-light white bginput':!reservationPage}" id="contactNo"
+                            placeholder="NUMBER" required>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 g-2">
+
+                    <div class="input-group mb-3 position-relative">
+                        <span class="inputicon">
+
+                            <img [ngClass]="{'inverted':!reservationPage}" src="/imgs/calendar.png" alt=""
+                                loading="lazy">
+                        </span>
+                        <input type="text" placeholder="DATE" class="form-control text-start input"
+                            [ngClass]="{'text-light white bginput':!reservationPage}" id="date" required>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 g-2">
+
+                    <div class="input-group mb-3 position-relative">
+                        <span class="inputicon">
+
+                            <img [ngClass]="{'inverted':!reservationPage}" src="/imgs/clock.png" alt="" loading="lazy">
+                        </span>
+                        <input type="datetime" class="form-control text-start input"
+                            [ngClass]="{'text-light white bginput':!reservationPage}" id="time" placeholder="TIME"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 g-2">
+                    <div class="input-group mb-3 position-relative">
+                        <span class="inputicon">
+
+                            <img [ngClass]="{'inverted':!reservationPage}" src="/imgs/group.png" alt="" loading="lazy">
+                        </span>
+                        <input type="number" class="form-control text-start input"
+                            [ngClass]="{'text-light white bginput':!reservationPage}" id="noofpersons"
+                            placeholder="NO OF PERSONS" required>
+                    </div>
+
+                </div>
+
+                <div class="col-12 m-4 text-center pb-5">
+                    <button class="btn Reservationbtn btn-md " type="submit">BOOK NOW </button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+</section>

@@ -1,0 +1,66 @@
+ .titlebg {
+    background: rgb(0, 0, 0, 0.9) url(/imgs/aboutintrobg.jpg) no-repeat center
+      center;
+    min-height: 280px;
+    position: relative;
+  }
+
+  #title h3 {
+    font-family: "Great Vibes", cursive;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  
+  #title a {
+    color: white;
+    font-family: "sans sarif";
+  }
+  
+  #title ul li img {
+    filter: invert(1);
+    height: 13px;
+    margin: 0px 0px 7px 0px;
+  }
+  
+   .pagetitle {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 292px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 15px 0;
+    border-radius:6px ;
+    color: white;
+    font-family: "Great Vibes", cursive;
+    transition: all 0.5s ease;
+  }
+  
+  
+ 
+
+
+ 
+
+     @media  (max-width:766.98px){
+
+   
+    .titlebg {
+   
+    min-height: 150px;
+   
+  }
+    .pagetitle {
+  
+    padding: 0px 0;
+    font-size: 14px;
+
+  }
+  
+   }
+   
+ 

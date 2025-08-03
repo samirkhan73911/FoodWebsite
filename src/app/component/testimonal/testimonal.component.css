@@ -1,0 +1,64 @@
+ #testimonal {
+    background: url(/imgs/tesi-bg.jpg) no-repeat center center/cover;
+    padding: 1px 0;
+  }
+  
+  .cspd {
+    padding: 50px;
+  }
+  
+  .testimonalinner {
+    background: #161d27;
+    color: #fff;
+    text-align: center;
+    margin: 225px 0;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+  }
+  
+  .testimonalinner img {
+    filter: invert(1);
+  }
+  
+
+  
+  .testimonalinner p {
+    margin: 0;
+  }
+
+
+
+
+    @media (max-width:1199.98px) {
+
+    
+   }
+
+  @media (max-width:991.98px) {
+
+     .testimonalinner{
+    margin: 100px 0;
+  }
+   }
+
+     @media  (max-width:766.98px){
+
+   
+   .testimonalinner{
+    margin: 40px 0;
+  }
+ 
+
+   }
+   
+   @media (max-width:576px){
+
+
+ 
+  }
+   @media (max-width:400px){
+
+ 
+
+   }
