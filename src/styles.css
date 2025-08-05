@@ -26,50 +26,59 @@ body {
   height: auto;
   transition: all 0.5s ease;
 }
-  .input {
-   
-    text-transform: uppercase;
-    height: 45px;
-    margin: 5px 15px !important;
-    /* padding: 0 0 0 20px; */
-    border-radius: 5px !important;
-    &:focus {
-       border: 1px solid var(--main-theme-color) !important;
-      box-shadow: none !important;
-      background-color: rgba(0, 0, 0, 0);
-    }
-     &.white::placeholder {
-      color: #ffffff75 !important;
-    }
-     &.dark::placeholder {
-      color: #ffffff5e !important;
-    }
-   
+.input {
+  text-transform: uppercase;
+  height: 45px;
+  margin: 5px 15px !important;
+  /* padding: 0 0 0 20px; */
+  border-radius: 5px !important;
+  background: rgba(245, 245, 245, 0.5);
+  &:focus {
+    border: 1px solid var(--main-theme-color) !important;
+    box-shadow: none !important;
+    background: rgba(245, 245, 245, 0.0);
   }
-.bginput{
- background-color: rgba(0, 0, 0, 0.2);
-
+  &.white::placeholder {
+    color: #ffffff75 !important;
+  }
+  &.dark::placeholder {
+    color: #ffffff5e !important;
+  }
 }
-  .inputicon img{
-    position: absolute ;
-    right: 40px ;
-    top: 17px ;
-    width: 20px ;
-    z-index: 2;
-  }
+.bginput {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.inputicon img {
+  position: absolute;
+  right: 40px;
+  top: 17px;
+  width: 20px;
+  z-index: 2;
+}
 
-  .inverted{
+.inverted {
+  filter: invert(1);
+}
 
-      filter: invert(1);
-  }
-
-  .descrption{
-    font-size: 15px;
+.description {
+  font-size: 15px;
   font-weight: 400;
   color: #757575;
   line-height: 26px;
-  }
-  /* -------------------------------- */
+    margin: 0 10% 24px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* -------------------------------- */
 /* -----------index page css  start -----------   */
 
 #main-nav .nav-item a:hover {
@@ -394,19 +403,6 @@ body {
   color: white;
 }
 
-/* book your table/ Reservation  section*/
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"],
-input[type="date"] {
-  -moz-appearance: textfield;
-}
-
 /* newsletter section*/
 
 .hide {
@@ -581,201 +577,6 @@ input[type="date"] {
 
 /* -------------getintouch page css start here-------------- */
 
-#getintuch {
-  background: white url("/imgs/contactpgbg.png") no-repeat bottom left;
-  padding: 50px;
-  background-size: 450px;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-}
-
-#getintuch input {
-  background: rgba(0, 0, 0, 0.08);
-  text-transform: uppercase;
-  height: 60px;
-  /* margin: 5px 15px; */
-  color: #1d1d1d99 !important;
-  padding: 0 0 0 20px;
-  border-radius: 5px;
-  font-size: 20px;
-}
-
-#getintuch input::placeholder {
-  color: #1d1d1d99 !important;
-  /* padding: 0 0 0 20px; */
-}
-
-#getintuch input:focus {
-  border: 1px solid var(--main-theme-color) !important;
-  box-shadow: none !important;
-}
-
-#textarea {
-  background: rgba(0, 0, 0, 0.08);
-  text-transform: uppercase;
-  height: 180px;
-  /* margin: 5px 15px; */
-  color: #1d1d1d99 !important;
-  padding: 0 0 0 20px !important;
-  border-radius: 5px;
-  resize: none;
-  font-size: 20px;
-}
-
-#textarea:focus {
-  border: 1px solid var(--main-theme-color) !important;
-  box-shadow: none !important;
-}
-
-/* #Reservation input:active{
-  border: 1px solid var(--main-theme-color);
-  } */
-
-.getintuchinputicon img {
-  position: absolute;
-  right: 40px;
-  top: 17px;
-  width: 20px;
-  /* color: white; */
-}
-
-.getintuchbtn {
-  background-color: var(--main-theme-color);
-  color: white;
-  padding: 11px;
-  border-radius: 5px;
-  width: 100%;
-  height: 50px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "sans serf";
-  transition: color 0.5s ease, background-color 0.5s ease;
-  border: 1px solid var(--main-theme-color);
-}
-
-.getintuchbtn:hover {
-  background-color: white;
-  color: var(--main-theme-color);
-  border: 1px solid var(--main-theme-color);
-}
-
-/* address */
-
-#address {
-  background-color: #e1dcdc;
-  padding: 80px 0;
-}
-
-.addresscardbodyBgClr {
-  background: #f5f5f5;
-  border-top: 1px solid #e5e5e5;
-}
-
-.addresscardtitle {
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: black;
-  margin: 0;
-  line-height: 25px;
-}
-
-.addresscarddescrption {
-  margin: 15px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #383636;
-  line-height: 30px;
-}
-
-.addresscardsize {
-  width: 263px;
-  height: 263px;
-}
-
-/* .contactsocialicons {
-    margin: 19px 0px 0 0px !important;
-  } */
-
-.addresscard-img-top {
-  object-fit: contain;
-  width: 30px;
-  height: 30px;
-  filter: invert(1);
-  margin: 18px 0px -10px 18px;
-}
-
-.addresssocial-img-top {
-  object-fit: contain;
-  width: 30px;
-  height: 30px;
-  filter: invert(1);
-  margin: 8px 8px 8px 8px;
-}
-
-.adresicondiv {
-  background-color: var(--main-theme-color);
-  margin: 30px auto 0;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-}
-
-/* .adressocialicondiv {
-      background-color: #e43c09;
-      margin: 30px auto 0;
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-  
-  } */
-#address ul li {
-  margin: 4px;
-}
-
-#address ul li:first-child {
-  background: #3b5999;
-  border-radius: 50%;
-}
-
-#address ul li:nth-child(2) {
-  background: #1da1f3;
-  border-radius: 50%;
-}
-
-#address ul li:nth-child(3) {
-  background: #de4b39;
-  border-radius: 50%;
-}
-
-#address ul li:nth-child(4) {
-  background: #843ab5;
-  border-radius: 50%;
-}
-
-#address ul li:nth-child(5) {
-  background: #3b9099;
-  border-radius: 50%;
-}
-
-#address ul li:nth-child(6) {
-  background: #86993b;
-  border-radius: 50%;
-}
-
-#address ul li:nth-child(7) {
-  background: #993b7e;
-  border-radius: 50%;
-}
-
-#address ul li:last-child {
-  background: #3b4199;
-  border-radius: 50%;
-}
-
 /*------------------ getintouch page css end here ----------- */
 
 /*------------------ OurBlog page css start here ----------- */
@@ -944,14 +745,13 @@ iframe {
   .headings {
     font-size: 32px !important;
   }
-  
 }
 
 @media (max-width: 991.98px) {
   .headings {
     font-size: 28px !important;
   }
-  .description{
+  .description {
     font-size: 14px;
   }
 }
@@ -960,7 +760,7 @@ iframe {
   .headings {
     font-size: 24px !important;
   }
-  .description{
+  .description {
     margin: 0 0 24px !important;
   }
 }

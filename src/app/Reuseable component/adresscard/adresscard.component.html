@@ -1,0 +1,41 @@
+<div class="card addresscardsize  align-items-center justify-content-center">
+
+    @if(type==='simple')
+    {
+
+    <div class="adresicondiv">
+
+
+        <img [src]="adressdata.iconurl" class="addresscard-img-top" alt="img" loading="lazy">
+
+    </div>
+    <div class="card-body  ">
+        <h3 class="card-text text-center addresscardtitle ">{{adressdata.title}}</h3>
+        <p class="card-text text-center addresscarddescrption" [innerHTML]="adressdata.carddata"></p>
+
+    </div>
+
+}
+@else if(type==='social'){
+
+<h3 class="card-text text-center addresscardtitle m-4">SOCIAL LINKS</h3>
+<ul class="list-unstyled list-inline">
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/facebook-app-symbol.png"
+            class="addresssocial-img-top" alt="img" loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/twitter.png" class="addresssocial-img-top"
+            alt="img" loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/instagram.png" class="addresssocial-img-top"
+            alt="img" loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/youtube.png" class="addresssocial-img-top"
+            alt="img" loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
+            loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
+            loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
+            loading="lazy"></li>
+    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
+            loading="lazy"></li>
+</ul>
+}
+</div>

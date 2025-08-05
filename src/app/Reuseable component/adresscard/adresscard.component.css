@@ -1,0 +1,107 @@
+
+.addresscardbodyBgClr {
+  background: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+}
+
+.addresscardtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+  line-height: 25px;
+}
+
+.addresscarddescrption {
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #383636;
+  line-height: 30px;
+}
+
+.addresscardsize {
+  width: 263px;
+  height: 263px;
+}
+
+/* .contactsocialicons {
+    margin: 19px 0px 0 0px !important;
+  } */
+
+.addresscard-img-top {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  margin: 18px 0px -10px 18px;
+}
+
+.addresssocial-img-top {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+  margin: 8px 8px 8px 8px;
+}
+
+.adresicondiv {
+  background-color: var(--main-theme-color);
+  margin: 30px auto 0;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+/* .adressocialicondiv {
+      background-color: #e43c09;
+      margin: 30px auto 0;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+  
+  } */
+#address ul li {
+  margin: 4px;
+}
+
+#address ul li:first-child {
+  background: #3b5999;
+  border-radius: 50%;
+}
+
+#address ul li:nth-child(2) {
+  background: #1da1f3;
+  border-radius: 50%;
+}
+
+#address ul li:nth-child(3) {
+  background: #de4b39;
+  border-radius: 50%;
+}
+
+#address ul li:nth-child(4) {
+  background: #843ab5;
+  border-radius: 50%;
+}
+
+#address ul li:nth-child(5) {
+  background: #3b9099;
+  border-radius: 50%;
+}
+
+#address ul li:nth-child(6) {
+  background: #86993b;
+  border-radius: 50%;
+}
+
+#address ul li:nth-child(7) {
+  background: #993b7e;
+  border-radius: 50%;
+}
+
+#address ul li:last-child {
+  background: #3b4199;
+  border-radius: 50%;
+}

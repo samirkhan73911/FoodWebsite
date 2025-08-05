@@ -29,9 +29,7 @@
 
 }
 
-.description{
-  margin: 0 10% 24px;
-}
+
 
 
 @media (max-width: 1199.98px) {
@@ -56,12 +54,4 @@
 
 }
 
-}
-
-@media (max-width: 576px) {
-
-  
-
-}
-@media (max-width: 400px) {
 }

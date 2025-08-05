@@ -1,10 +1,8 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { BooktableComponent } from "../booktable/booktable.component";
 import { RouterLink } from '@angular/router';
-// import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselModule ,OwlOptions} from 'ngx-owl-carousel-o';
-import { BlogscardComponent } from '../../component/blogscard/blogscard.component';
-import { FoodcardComponent } from '../../Reuseable component/foodcard/foodcard.component';
+import { CardComponent } from '../../Reuseable component/card/card.component';
 
 
 
@@ -12,7 +10,7 @@ import { FoodcardComponent } from '../../Reuseable component/foodcard/foodcard.c
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BooktableComponent, BlogscardComponent, RouterLink, FoodcardComponent, CarouselModule],
+  imports: [BooktableComponent, RouterLink, CardComponent, CarouselModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

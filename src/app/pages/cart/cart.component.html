@@ -39,10 +39,10 @@
             <div id="all" class="row tab-pane active" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
 
                 <div class="col-6 my-3">
-                    <app-foodcard [isMenuCard]="true" [fooddata]="['/imgs/pngegg(1).png', 'Dish Name Here',
-                            'Cursus / Dictum / Risus',
-                            'Lorem ipsum is simply dummy text of the printing and type setting industry.',
-                            '100$']" />
+                    <app-card  [isMenuCard]="true" [fooddata]="{'imgurl':'/imgs/pngegg(1).png', 'title':'Dish Name Here',
+                            'descsmall':'Cursus / Dictum / Risus',
+                            'description':'Lorem ipsum is simply dummy text of the printing and type setting industry.',
+                            'price':100}" />
                 </div>
             </div>
         </div>
