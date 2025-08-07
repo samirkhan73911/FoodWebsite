@@ -3,3 +3,30 @@
 padding: 13px 25px 13px 25px !important;
 margin-right: 10px;
 }
+
+#OurBlog {
+  background-color: #f5f5f5;
+}
+
+/* pigination */
+.page-link {
+  border-radius: 8px;
+  background-color: #fdfafa;
+  color: #393b3c;
+}
+
+.active > .page-link {
+  color: white !important;
+  background-color: #d2481e !important;
+}
+
+.page-link:hover {
+  color: white !important;
+  background-color: #d2481e !important;
+}
+
+.page-link:focus {
+  color: white !important;
+  background-color: #d2481e !important;
+  box-shadow: none;
+}

@@ -1,41 +1,74 @@
-<div class="card addresscardsize  align-items-center justify-content-center">
+<div class="card addresscardsize my-4 py-3  align-items-center justify-content-center">
 
-    @if(type==='simple')
-    {
+        @if(type==='simple')
+        {
 
-    <div class="adresicondiv">
+        <div class="adresicondiv">
 
 
-        <img [src]="adressdata.iconurl" class="addresscard-img-top" alt="img" loading="lazy">
+                <img [src]="adressdata.iconurl" class="icon" alt="img" loading="lazy">
 
-    </div>
-    <div class="card-body  ">
-        <h3 class="card-text text-center addresscardtitle ">{{adressdata.title}}</h3>
-        <p class="card-text text-center addresscarddescrption" [innerHTML]="adressdata.carddata"></p>
+        </div>
+        <div class="card-body p-3">
+                <h3 class="card-text text-center addresscardtitle ">{{adressdata.title}}</h3>
+                <p class="card-text text-center addresscarddescrption" [innerHTML]="adressdata.carddata"></p>
 
-    </div>
+        </div>
 
-}
-@else if(type==='social'){
+        }
+        @else if(type==='social'){
 
-<h3 class="card-text text-center addresscardtitle m-4">SOCIAL LINKS</h3>
-<ul class="list-unstyled list-inline">
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/facebook-app-symbol.png"
-            class="addresssocial-img-top" alt="img" loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/twitter.png" class="addresssocial-img-top"
-            alt="img" loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/instagram.png" class="addresssocial-img-top"
-            alt="img" loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/youtube.png" class="addresssocial-img-top"
-            alt="img" loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
-            loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
-            loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
-            loading="lazy"></li>
-    <li class="list-inline-item contactsocialicons"> <img src="/imgs/pin.png" class="addresssocial-img-top" alt="img"
-            loading="lazy"></li>
-</ul>
-}
+        <h3 class="card-text text-center addresscardtitle m-4 ">SOCIAL LINKS</h3>
+        <ul class="list-unstyled list-inline text-center px-3 px-sm-3 mx-sm-3 px-md-4 px-lg-2 mx-lg-2 px-xl-4">
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/facebook-app-symbol.png" class="socialicons" alt="img"
+                                        loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/twitter.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/instagram.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/youtube.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/pin.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/pin.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/pin.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+
+                <li class="list-inline-item ">
+                        <a class="sociallinks" href="">
+                                <img src="/imgs/pin.png" class="socialicons" alt="img" loading="lazy">
+                        </a>
+                </li>
+        </ul>
+        }
 </div>

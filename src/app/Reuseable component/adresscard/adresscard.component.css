@@ -6,102 +6,104 @@
 
 .addresscardtitle {
   font-family: "Lato", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  color: black;
-  margin: 0;
+  color: #333;
+  margin: 5px 0;
   line-height: 25px;
 }
 
 .addresscarddescrption {
-  margin: 15px;
-  font-size: 15px;
+  /* margin: 0px 15px; */
+  font-size: 14px;
   font-weight: 400;
-  color: #383636;
-  line-height: 30px;
+  color: gray;
+  line-height: 25px;
 }
 
 .addresscardsize {
-  width: 263px;
   height: 263px;
 }
 
-/* .contactsocialicons {
-    margin: 19px 0px 0 0px !important;
-  } */
 
-.addresscard-img-top {
+.icon {
   object-fit: contain;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   filter: invert(1);
-  margin: 18px 0px -10px 18px;
+  margin: 20px 0px 0px 20px;
 }
 
-.addresssocial-img-top {
-  object-fit: contain;
-  width: 30px;
-  height: 30px;
-  filter: invert(1);
-  margin: 8px 8px 8px 8px;
-}
 
 .adresicondiv {
   background-color: var(--main-theme-color);
-  margin: 30px auto 0;
+  margin: 20px auto 0px;
   width: 65px;
   height: 65px;
   border-radius: 50%;
 }
 
-/* .adressocialicondiv {
-      background-color: #e43c09;
-      margin: 30px auto 0;
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-  
-  } */
-#address ul li {
+
+ul li {
   margin: 4px;
 }
 
-#address ul li:first-child {
+ ul li:first-child {
   background: #3b5999;
   border-radius: 50%;
 }
 
-#address ul li:nth-child(2) {
+  ul li:nth-child(2) {
   background: #1da1f3;
   border-radius: 50%;
 }
 
-#address ul li:nth-child(3) {
+  ul li:nth-child(3) {
   background: #de4b39;
   border-radius: 50%;
 }
 
-#address ul li:nth-child(4) {
+  ul li:nth-child(4) {
   background: #843ab5;
   border-radius: 50%;
 }
 
-#address ul li:nth-child(5) {
+  ul li:nth-child(5) {
   background: #3b9099;
   border-radius: 50%;
 }
 
-#address ul li:nth-child(6) {
+  ul li:nth-child(6) {
   background: #86993b;
   border-radius: 50%;
 }
-
-#address ul li:nth-child(7) {
+ ul li:nth-child(7) {
   background: #993b7e;
   border-radius: 50%;
 }
 
-#address ul li:last-child {
+ ul li:last-child {
   background: #3b4199;
   border-radius: 50%;
+}
+
+
+
+
+@media  (max-width:991.98px) {
+
+  
+.addresscardtitle {
+
+  font-size: 15px;
+
+}
+
+.addresscarddescrption {
+  margin: 0px;
+  line-height: 26px !important;
+ 
+
+}
+    
 }

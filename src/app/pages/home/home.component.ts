@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { BooktableComponent } from "../booktable/booktable.component";
+import { BooktableComponent } from "../../component/booktable/booktable.component";
 import { RouterLink } from '@angular/router';
 import { CarouselModule ,OwlOptions} from 'ngx-owl-carousel-o';
 import { CardComponent } from '../../Reuseable component/card/card.component';
