@@ -105,9 +105,7 @@ input[type="number"] {
 /* -------------------------------- */
 /* -----------index page css  start -----------   */
 
-#main-nav .nav-item a:hover {
-  color: var(--main-theme-color) !important;
-}
+
 
 .dividerimg img {
   width: 130px;
@@ -148,34 +146,6 @@ input[type="number"] {
   filter: invert(1);
 }
 
-/* .row {
-     margin-left: -15px;
-      margin-right: -15px; 
-  } */
-
-/* intro  section*/
-
-.introbtn {
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 5px;
-  width: 200px;
-  height: 57px;
-  font-size: 24px;
-  font-family: "sans serf";
-  transition: color 0.5s ease, background-color 0.5s ease;
-
-  &:hover {
-    background-color: var(--main-theme-color);
-    color: white;
-    border: 1px solid var(--main-theme-color);
-  }
-}
-
-
-
 
 .getintuchbtn {
   background-color: var(--main-theme-color);
@@ -196,101 +166,11 @@ input[type="number"] {
   }
 }
 
-/* order section*/
 
-#order {
-  height: 500px;
-  background: #f6f6f6 url("/imgs/order-bg-bottom.jpg") no-repeat center bottom;
-}
-#order input {
-  border-radius: 5px;
-  padding: 10px;
-  border: 1px solid rgba(63, 70, 70, 0.34);
-  outline: none;
-}
-#order input:focus {
-  border: 1px solid orange !important;
-}
-.Ordersearchbtn {
-  background-color: var(--main-theme-color);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100px;
-  font-size: 17px;
-  font-family: "sans serf";
-  transition: color 0.5s ease, background-color 0.5s ease;
-  border: 1px solid var(--main-theme-color);
-}
-.Ordersearchbtn:hover {
-  background: #ffffff;
-  color: var(--main-theme-color);
-  border: 1px solid var(--main-theme-color);
-}
 
-.imgbg {
-  width: 100%;
-  height: 680px;
-  display: block;
-  object-fit: cover;
-}
 
-.slidermenu button {
-  background: #ffffff;
-  color: var(--main-theme-color);
-  border: 1px solid var(--main-theme-color);
-  padding: 10px;
-  border-radius: 5px;
-  width: 200px;
-  height: 57px;
-  font-size: 24px;
-  font-family: "sans serf";
-  transition: color 0.5s ease, background-color 0.5s ease;
-}
-.slidermenu {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: auto;
-  bottom: 15%;
-  text-align: center;
-}
 
-.slidermenu img {
-  width: auto;
-  height: 100px;
-}
 
-#bgSlideShow .carousel-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-.slidermenu p {
-  font-size: 16px;
-  color: #fff;
-  margin: 0 10% 25px;
-  line-height: 26px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-}
-.slideheader {
-  font-size: 50px;
-  color: #fff;
-  font-weight: 400;
-  margin: 10px 0;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-}
-
-.orderingfoodicons {
-  margin: 0 33px 0 37px !important;
-}
 
 /* popular dishes section*/
 
@@ -624,13 +504,13 @@ input[type="number"] {
 /* ---------------------- */
 
 @media (max-width: 1199.98px) {
-  .headings {
+  .headingprimary {
     font-size: 32px !important;
   }
 }
 
 @media (max-width: 991.98px) {
-  .headings {
+  .headingprimary {
     font-size: 28px !important;
   }
   .description {
@@ -639,7 +519,7 @@ input[type="number"] {
 }
 
 @media (max-width: 766.98px) {
-  .headings {
+  .headingprimary {
     font-size: 24px !important;
   }
   .description {
