@@ -9,10 +9,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.css',
 })
 export class CardComponent {
-  @Input() isMenuCard: boolean = true;
+
   @Input() cardType: 'menu' | 'simple' | 'chef' | 'blog' = 'menu';
 
-  @Input() fooddata: {
+  @Input() carddata: {
     imgurl: string;
     title: string;
     descsmall: string;

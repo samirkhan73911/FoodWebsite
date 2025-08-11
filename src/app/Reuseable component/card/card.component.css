@@ -2,9 +2,10 @@
 /* card */
 
 .card-img-top {
-  object-fit: fill;
+  object-fit: contain;
   width: 100%;
-  height: 180px;
+  height: 100%;
+ 
 }
 .cardbodyBgClr {
   background: #f5f5f5;
@@ -12,7 +13,7 @@
 }
 .cardtitle {
   font-family: "Lato", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--main-theme-color);
   margin: 0;
@@ -42,19 +43,19 @@
 /* menu card */
 .ourmenucardimg {
   object-fit: contain;
-  width: 150px;
-  height: 180px;
+  width: 130px;
+  height: 150px;
   padding-right: 10px;
 }
 
 .ourmenucard {
-  width: 545px;
+  width:100%;
   height: auto;
   padding: 0px 13px 0px 16px;
 }
 .ourmenuPrice {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--main-theme-color);
   margin: 0;
@@ -66,7 +67,7 @@
 
 .menucardtitle {
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--main-theme-color);
   line-height: 20px;
@@ -74,13 +75,13 @@
 
 .menudescrption {
   margin-bottom: 15px;
-  font-size: 17px;
+
   font-weight: 400;
   color: #757575;
   padding-right: 30px;
 }
 
-.menucarddescrption {
+.menudescrptionsmall {
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -89,11 +90,14 @@
   line-height: 20px;
 }
 
+.bordr{
+    border-left: 1px solid rgb(206, 206, 206);
+  }
 
 /* Our Chefs section*/
 
 .ourchefscardsize {
-  width: 260px;
+  width: 100%;
   height: auto;
 }
 
@@ -124,4 +128,61 @@
 
 .scoial ul li:last-child:hover {
   background: red;
+}
+
+
+
+@media  (max-width:1199.98px) {
+  .cardsize{
+    width: 224px;
+  }
+  
+}
+@media  (max-width:991.98px) {
+  .cardsize{
+    width: 232px;
+  }
+  .cardprice{
+  font-size:20px ;
+}
+    .menudescrption {
+
+  font-size: 14px;
+}
+.ourmenucard{
+    width: 100%;
+    /* text-align: center !important; */
+  }
+  .ourmenucardimg{
+    width: 100px;
+  }
+}
+@media  (max-width:766.98px) {
+.cardtitle{
+  font-size: 16px;
+}
+.cardprice{
+  font-size:18px ;
+}
+  .cardsize{
+    width: 100%;
+    /* text-align: center !important; */
+  }
+  .menudescrption {
+
+  padding-right: 0px;
+}
+  .ourmenucardimg{
+    width: 130px;
+  }
+  .ourmenuPrice{
+    position: static;
+  }
+  .bordr{
+    border: none;
+  }
+  
+}
+@media  (max-width:576px) {
+
 }

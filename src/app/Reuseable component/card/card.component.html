@@ -1,20 +1,25 @@
 <div *ngIf="cardType === 'simple' || cardType === 'menu'" class="card align-items-center justify-content-center"
-  [ngClass]="{ 'ourmenucard flex-row': isMenuCard, 'cardsize': !isMenuCard }">
-  <img [ngClass]="{ 'ourmenucardimg': isMenuCard }" [src]="fooddata.imgurl" class="card-img-top" alt="img"
-    loading="lazy">
+  [ngClass]="{ 'ourmenucard flex-md-row': cardType === 'menu', 
+       'cardsize': cardType === 'simple'  }">
+  <img [ngClass]="{ 'ourmenucardimg': cardType === 'menu','card-img-top': cardType === 'simple'}"
+    [src]="carddata.imgurl" alt="img" loading="lazy">
 
-  <div class="card-body p-3" [ngClass]="{ 'border-start borderclr': isMenuCard, 'cardbodyBgClr': !isMenuCard }">
+  <div class="card-body p-3 text-center"
+    [ngClass]="{ 'pt-0 pt-md-3 text-md-start bordr ': cardType === 'menu', ' cardbodyBgClr': cardType === 'simple'}">
+
     <h3 class="card-text"
-      [ngClass]="{ 'text-start menucardtitle mt-3 mb-2': isMenuCard, 'text-center cardtitle m-3': !isMenuCard }">
-      {{ fooddata.descsmall }}
+      [ngClass]="{ '  menucardtitle mt-0 mt-md-3 mb-2': cardType === 'menu', ' cardtitle m-3': cardType === 'simple'}">
+      {{ carddata.title }}
     </h3>
-    <p [ngClass]="{ 'menucarddescrption': isMenuCard, 'd-none': !isMenuCard }">{{ fooddata.descsmall }}</p>
+    <p [ngClass]="{ 'menudescrptionsmall': cardType === 'menu', 'd-none': cardType === 'simple'}">{{ carddata.descsmall
+      }}</p>
     <p class="card-text"
-      [ngClass]="{ 'text-start menudescrption': isMenuCard, 'text-center carddescrption': !isMenuCard }">
-      {{ fooddata.description }}
+      [ngClass]="{ '   menudescrption': cardType === 'menu', 'carddescrption': cardType === 'simple'}">
+      {{ carddata.description }}
     </p>
-    <p class="card-text" [ngClass]="{ 'text-start ourmenuPrice': isMenuCard, 'text-center cardprice': !isMenuCard }">
-      {{ fooddata.price}}$
+    <p class="card-text"
+      [ngClass]="{ ' ourmenuPrice': cardType === 'menu', ' cardprice': cardType === 'simple'}">
+      {{ carddata.price}}$
     </p>
   </div>
 </div>
@@ -24,20 +29,24 @@
   <img [src]="chefdata.imgurl" class="card-img-top" alt="img" loading="lazy">
 
   <div class="card-body p-3">
-    <h3 class="card-text text-center cardtitle m-3 scoial">{{ chefdata.name }}</h3>
+    <h3 class="card-text text-center cardtitle m-3 mt-0 scoial">{{ chefdata.name }}</h3>
 
-    <ul class="list-unstyled list-inline text-center py-3">
+    <ul class="list-unstyled list-inline text-center py-0">
       <li class="list-inline-item " *ngIf="chefdata.links[0]">
-        <a class="sociallinks" [href]="chefdata.links[0]"><img class="socialicons" src="/imgs/facebook-app-symbol.png" alt="Facebook" loading="lazy"></a>
+        <a class="sociallinks" [href]="chefdata.links[0]"><img class="socialicons" src="/imgs/facebook-app-symbol.png"
+            alt="Facebook" loading="lazy"></a>
       </li>
       <li class="list-inline-item " *ngIf="chefdata.links[1]">
-        <a class="sociallinks" [href]="chefdata.links[1]"><img class="socialicons" src="/imgs/twitter.png" alt="Twitter" loading="lazy"></a>
+        <a class="sociallinks" [href]="chefdata.links[1]"><img class="socialicons" src="/imgs/twitter.png" alt="Twitter"
+            loading="lazy"></a>
       </li>
       <li class="list-inline-item " *ngIf="chefdata.links[2]">
-        <a class="sociallinks" [href]="chefdata.links[2]"><img class="socialicons" src="/imgs/instagram.png" alt="Instagram" loading="lazy"></a>
+        <a class="sociallinks" [href]="chefdata.links[2]"><img class="socialicons" src="/imgs/instagram.png"
+            alt="Instagram" loading="lazy"></a>
       </li>
       <li class="list-inline-item " *ngIf="chefdata.links[3]">
-        <a class="sociallinks" [href]="chefdata.links[3]"><img class="socialicons" src="/imgs/youtube.png" alt="YouTube" loading="lazy"></a>
+        <a class="sociallinks" [href]="chefdata.links[3]"><img class="socialicons" src="/imgs/youtube.png" alt="YouTube"
+            loading="lazy"></a>
       </li>
     </ul>
 
@@ -50,8 +59,8 @@
 
   <img class="img-fluid" [src]="blogdata.imgurl" alt="img" title="img" loading="lazy">
 
-  <div class="card-body cardbodyBgClr p-3 ">
-    <h3 class="card-text text-start cardtitle mt-3">
+  <div class="card-body text-center text-sm-start cardbodyBgClr p-3 ">
+    <h3 class="card-text cardtitle mt-3">
       {{ blogdata.title || 'Blog Title Here' }}
     </h3>
 
@@ -59,7 +68,7 @@
       {{ blogdata.ourblogdescrption || 'May 15, 2017 / By admin / 3 Comments' }}
     </p>
 
-    <p class="card-text text-start carddescrption">
+    <p class="card-text  carddescrption">
       {{ blogdata.carddescrption || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat
       nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan...' }}
     </p>

@@ -135,9 +135,27 @@
   font-weight: 600;
 }
     .lines {
-    max-width: 290px;
+    max-width: 310px;
     margin:0px 25px 0px 0px;
   }
+.hilight {
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+.nav-pills .nav-link {
+  color: rgb(29, 28, 28) !important;
+}
+.nav-pills .nav-link:hover {
+  background-color: var(--main-theme-color) !important;
+  color: white !important;
+}
+.nav-pills .nav-link.active {
+  background-color: var(--main-theme-color) !important;
+  color: white !important;
+}
 
 /* ---------------------- */
 
@@ -195,10 +213,13 @@
   font-size: 15px;
  
 }
+.hilight{
+    font-size: 12px;
+  }
  
 }
 
-@media (max-width: 766.98px) {
+@media (max-width: 768px) {
   .introbtn {
     padding: 5px 16px;
     font-size: 18px;
@@ -241,9 +262,16 @@
     max-width: 240px;
     margin:-10px 25px 0px 0px;
   }
+  .hilight{
+    font-size: 14px;
+  }
+  .nav-pills .nav-item {
+  width: 100%;
+
+}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .overlay {
     width: 100%;
     height: 250px;
@@ -272,7 +300,8 @@
   font-size: 13px;
  
 }
- 
+
+
 }
 @media (max-width: 430px) {
   .slidemenu p {

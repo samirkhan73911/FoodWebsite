@@ -47,7 +47,7 @@ export class HomeComponent {
     nav: false
   }
 
-  Owlhome2: OwlOptions = {
+  Owlpopulardishes: OwlOptions = {
     loop: true,
     slideTransition:'linear 0.1s',
     autoplayTimeout: 10000,
@@ -61,15 +61,16 @@ export class HomeComponent {
     navText: ['<', '>'],
     responsive: {
       0: {
-        items: 4
+        items: 1
       },
-      400: {
-        items: 4
+      552: {
+        items: 2
       },
-      740: {
-        items: 4
+      720: {
+        items: 3
       },
-      940: {
+     
+      920: {
         items: 4
       }
     },

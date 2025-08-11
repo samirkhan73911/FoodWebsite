@@ -174,41 +174,6 @@ input[type="number"] {
 
 /* popular dishes section*/
 
-.card-img-top {
-  object-fit: fill;
-  width: 100%;
-  height: 180px;
-}
-.cardbodyBgClr {
-  background: #f5f5f5;
-  border-top: 1px solid #e5e5e5;
-}
-.cardtitle {
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--main-theme-color);
-  margin: 0;
-  line-height: 20px;
-}
-.carddescrption {
-  margin-bottom: 15px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #757575;
-}
-.cardprice {
-  font-family: "Lato", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--main-theme-color);
-  margin: 0;
-  line-height: 20px;
-}
-.cardsize {
-  width: 263px;
-  height: auto;
-}
 
 /* our menu section*/
 
@@ -221,23 +186,7 @@ input[type="number"] {
   flex-wrap: wrap;
 }
 
-.hilight {
-  font-weight: 600;
-  font-size: 18px;
-  margin: 0;
-  text-transform: uppercase;
-}
-.nav-pills .nav-link {
-  color: rgb(29, 28, 28) !important;
-}
-.nav-pills .nav-link:hover {
-  background-color: var(--main-theme-color) !important;
-  color: white !important;
-}
-.nav-pills .nav-link.active {
-  background-color: var(--main-theme-color) !important;
-  color: white !important;
-}
+
 
 .ourMenuimgright {
   background: url("/imgs/bg-big-right.png") no-repeat right bottom;
@@ -246,54 +195,6 @@ input[type="number"] {
   background: url("/imgs/bg-big-left.png") no-repeat left bottom;
 }
 
-.ourmenucardimg {
-  object-fit: contain;
-  width: 150px;
-  height: 180px;
-  padding-right: 10px;
-}
-
-.ourmenucard {
-  width: 545px;
-  height: auto;
-  padding: 0px 13px 0px 16px;
-}
-.ourmenuPrice {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--main-theme-color);
-  margin: 0;
-  line-height: 20px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-.menucardtitle {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--main-theme-color);
-  line-height: 20px;
-}
-
-.menudescrption {
-  margin-bottom: 15px;
-  font-size: 17px;
-  font-weight: 400;
-  color: #757575;
-  padding-right: 30px;
-}
-
-.menucarddescrption {
-  font-family: "Lato", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: #000;
-  margin: 0;
-  line-height: 20px;
-}
 
 .menuViewbtn {
   background: #ffffff;
