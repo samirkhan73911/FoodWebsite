@@ -1,4 +1,22 @@
+.ourblogsbtn {
+  background-color: white;
+  color: var(--main-theme-color);
+  padding: 8px;
+  border-radius: 5px;
+  width: 146px;
+  height: 46px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "sans serf";
+  transition: color 0.5s ease, background-color 0.5s ease;
+  border: 1px solid var(--main-theme-color);
 
+  &:hover{
+
+     background-color: var(--main-theme-color);
+  color: white;
+  }
+}
 /* card */
 
 .card-img-top {
@@ -165,7 +183,7 @@
   font-size:18px ;
 }
   .cardsize{
-    width: 100%;
+    width: 97%;
     /* text-align: center !important; */
   }
   .menudescrption {
@@ -184,5 +202,8 @@
   
 }
 @media  (max-width:576px) {
-
+ .cardsize{
+    width: 100%;
+    /* text-align: center !important; */
+  }
 }

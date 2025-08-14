@@ -113,7 +113,7 @@
   border: 1px solid var(--main-theme-color);
 
   &:hover {
-    background: #ffffff;
+    background-color: #ffffff;
     color: var(--main-theme-color);
     border: 1px solid var(--main-theme-color);
   }

@@ -1,0 +1,36 @@
+.aboutimg {
+  padding: 45px 10px;
+}
+.choseusimg img {
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  padding: 4px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon img {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+
+@media(width<=922px){
+    .icon img {
+ 
+  width: 80px;
+  height: 80px;
+    }}
+    
+@media(width<=767px){
+    .icon img {
+ 
+  width: 60px;
+  height: 60px;
+    }
+}

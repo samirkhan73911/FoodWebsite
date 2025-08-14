@@ -1,13 +1,28 @@
-h3{
-    font-size: 36px;
+h3 {
+  font-size: 36px;
   line-height: 1.5;
   color: black;
 }
 
-.thanks-content{
+.thanks-content {
+  margin: 10px auto;
+  font-size: 18px;
+  color: #757575;
+}
+.thanks-content :where(p) {
+  font-size: 18px;
+}
+.btnwraper {
+  width: 170px !important;
+}
 
-    margin:
-    10px auto;
-      font-size: 18px;
-      color: #757575;
+@media (width<992px) {
+  .thanks-content h3 {
+    font-size: 30px;
+  }
+}
+@media (width<576px) {
+  .thanks-content h3 {
+    font-size: 20px;
+  }
 }

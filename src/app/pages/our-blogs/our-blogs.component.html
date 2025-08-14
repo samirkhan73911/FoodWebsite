@@ -19,7 +19,7 @@
 
                     <div class="col-12 ">
                         <div class="row pb-5">
-                            <div class="col-4 my-4">
+                            <div class="col-12 col-sm-4 my-3 pt-2">
                                 <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
                                                              title: 'Blog Title Here',
                                                              ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
@@ -28,9 +28,9 @@
                                                                  Nullam ultricies eu turpis at accumsan...',
                                                              link: ''}" />
                             </div>
-                            
-                            <div class="col-4 my-4">
-                               <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+
+                            <div class="col-12 col-sm-4 my-3 pt-2">
+                                <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
                                                              title: 'Blog Title Here',
                                                              ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
                                                              carddescrption: 'Lorem ipsum dolor sit amet, consectetur
@@ -38,9 +38,9 @@
                                                                  Nullam ultricies eu turpis at accumsan...',
                                                              link: ''}" />
                             </div>
-                            
-                            <div class="col-4 my-4">
-                             <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+
+                            <div class="col-12 col-sm-4 my-3 pt-2">
+                                <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
                                                              title: 'Blog Title Here',
                                                              ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
                                                              carddescrption: 'Lorem ipsum dolor sit amet, consectetur
@@ -48,9 +48,9 @@
                                                                  Nullam ultricies eu turpis at accumsan...',
                                                              link: ''}" />
                             </div>
-                            
-                            <div class="col-4 my-4">
-                                 <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+
+                            <div class="col-12 col-sm-4 my-3 pt-2">
+                                <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
                                                              title: 'Blog Title Here',
                                                              ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
                                                              carddescrption: 'Lorem ipsum dolor sit amet, consectetur
@@ -58,9 +58,9 @@
                                                                  Nullam ultricies eu turpis at accumsan...',
                                                              link: ''}" />
                             </div>
-                            
-                            <div class="col-4 my-4">
-                                 <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+
+                            <div class="col-12 col-sm-4 my-3 pt-2">
+                                <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
                                                              title: 'Blog Title Here',
                                                              ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
                                                              carddescrption: 'Lorem ipsum dolor sit amet, consectetur
@@ -68,9 +68,9 @@
                                                                  Nullam ultricies eu turpis at accumsan...',
                                                              link: ''}" />
                             </div>
-                            
-                            <div class="col-4 my-4">
-                                 <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
+
+                            <div class="col-12 col-sm-4 my-3 pt-2">
+                                <app-card [cardType]="'blog'" [blogdata]="{ imgurl: '/imgs/blog img.jpg',
                                                              title: 'Blog Title Here',
                                                              ourblogdescrption: 'May 15, 2017 / By admin / 3 Comments',
                                                              carddescrption: 'Lorem ipsum dolor sit amet, consectetur
@@ -81,48 +81,14 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col-4 ">
-                        <div class="row pt-4">
-                            <div class="col-12">
-                                <form action="" class="position-relative">
-                                    <input class="" type="text" placeholder="Search">
-                                    <button> <img src="/imgs/search(1).png" alt=""></button>
-                                </form>
-                            </div>
-                            <div class="col-12">
-                                <h3>Recent Blogs Posts</h3>
-                                <ul class="list-inline">
-                                   <li class="list-item"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> -->
+
 
                     <div class="col-12  py-3 text-center d-flex justify-content-center">
-                        <pagination  [totalItems]="77"
-                        previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
-             
-            </pagination>
-                        <!-- <nav aria-label="Page navigation example ">
-                            <ul class="pagination pagination-lg justify-content-center gap-2">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                <li class="page-item"><a class="page-link" href="#">20</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav> -->
+                        <pagination [totalItems]="77" [maxSize]="5" previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;"
+                            lastText="&raquo;">
+
+                        </pagination>
+
                     </div>
                 </div>
 

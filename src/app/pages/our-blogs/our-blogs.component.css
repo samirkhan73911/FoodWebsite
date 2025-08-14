@@ -1,6 +1,6 @@
 
 ::ng-deep .page-link{
-padding: 13px 25px 13px 25px !important;
+padding: 10px 17px  !important;
 margin-right: 10px;
 }
 
@@ -29,4 +29,20 @@ margin-right: 10px;
   color: white !important;
   background-color: #d2481e !important;
   box-shadow: none;
+}
+
+
+@media(576px>=width){
+  
+::ng-deep .page-link{
+padding: 6px 12px  !important;
+margin-right: 10px;
+}
+}
+@media(576px<width<767px){
+  
+::ng-deep .page-link{
+padding: 8px 15px  !important;
+margin-right: 10px;
+}
 }

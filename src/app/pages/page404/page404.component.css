@@ -1,15 +1,27 @@
-.title{
-    font-size: 200px;
+.title {
+  font-size: 200px;
   font-weight: 900;
   letter-spacing: 10px;
   color: #e54c2a;
-  text-shadow: 7px 6px 0 #dadada, 0 -1px 0 #dadada, 1px -1px 0 #dadada, -1px 1px 0 #dadada, 1px 1px 0 #dadada;
-
+  text-shadow: 7px 6px 0 #dadada, 0 -1px 0 #dadada, 1px -1px 0 #dadada,
+    -1px 1px 0 #dadada, 1px 1px 0 #dadada;
 }
 
-.description{font-size: 15px;
-    font-weight: 400;
-    color: #757575;
-    margin:
-  0 10% 24px;
-    line-height: 26px;}
+.description {
+  font-size: 15px;
+  font-weight: 400;
+  color: #757575;
+  margin: 0 10% 24px;
+  line-height: 26px;
+}
+.btnwraper {
+  width: 170px !important;
+}
+
+
+
+@media(width<576px){
+  .title{
+    font-size: 100px;
+  }
+}
