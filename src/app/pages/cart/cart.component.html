@@ -23,8 +23,8 @@
 
                 </li>
                 <li class="nav-item text-center  ">
-                    <button class="nav-link cart-step-circle" id="" data-bs-toggle="tab"
-                        data-bs-target="#tab-payment" type="button" role="tab" aria-controls="tab-payment" aria-selected="false">
+                    <button class="nav-link cart-step-circle" id="" data-bs-toggle="tab" data-bs-target="#tab-payment"
+                        type="button" role="tab" aria-controls="tab-payment" aria-selected="false">
                         3
                     </button>
                     <div class="cart-step-label">PAYMENT METHOD</div>
@@ -32,106 +32,162 @@
             </ul>
             <div class="cart-stepper-line"></div>
         </div>
-   
-
-    <div class="col-12 tab-content">
-        <div id="tab-cart" class="tab-pane active">
-            <div class="cart-container">
-                <h4 class="cart-header">You have <span class="cart-items-count">2 items</span> in your order.</h4>
-                <table class="  table align-middle border">
-                    <thead class="bg-dark-subtle">
-                        <tr class=" ">
-
-                            <th class="text-center bg-dark-subtle py-3">NAME</th>
-                            <th class="text-center bg-dark-subtle py-3">PRICE</th>
-                            <th class="text-center bg-dark-subtle py-3">QTY.</th>
-                            <th class="text-center bg-dark-subtle py-3">TOTAL</th>
-                            <th class="text-center bg-dark-subtle py-3"></th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="text-center">
-
-                            <td class="">
 
 
-                                <a class="float-start" href="">
+        <div class="col-12 tab-content">
 
-                                    <img src="/imgs/pngegg(1).png" alt="Food" class="cart-img">
-                                </a>
-                                <div class="cart-item-name">
+            <div id="tab-cart" class="tab-pane active">
+                <div class="cart-container">
+                    <h4 class="cart-header">You have <span class="cart-items-count">2 items</span> in your order.</h4>
+                    <table class="  table align-middle border">
+                        <thead class="bg-dark-subtle">
+                            <tr class=" ">
+
+                                <th class="text-center bg-dark-subtle py-3">NAME</th>
+                                <th class="text-center bg-dark-subtle py-3">PRICE</th>
+                                <th class="text-center bg-dark-subtle py-3">QTY.</th>
+                                <th class="text-center bg-dark-subtle py-3">TOTAL</th>
+                                <th class="text-center bg-dark-subtle py-3"></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+
+                                <td class="">
 
 
-                                    <h4 class="cart-title">Food Title Here</h4>
-                                    <p class="cart-desc">Cursus / Dictum / Risus</p>
-                                    <div class="cart-stars">
-                                        <span>★ ★ ★ ★ ☆</span>
+                                    <a class="float-start" href="">
+
+                                        <img src="/imgs/pngegg(1).png" alt="Food" class="cart-img">
+                                    </a>
+                                    <div class="cart-item-name">
+
+
+                                        <h4 class="cart-title">Food Title Here</h4>
+                                        <p class="cart-desc m-0">Cursus / Dictum / Risus</p>
+                                        <div class="cart-stars">
+                                            <rating [(ngModel)]="rate" [max]="max" 
+                                                (keyup)="confirmSelection($event)"></rating>
+                                           
+                                        </div>
                                     </div>
-                                </div>
 
-                            </td>
-                            <td class="cart-col-price">
-                                $23.00
-                            </td>
-                            <td class="">
-                                <div class="cart-qty-controls">
-                                    <button class="qty-btn-minus qty-btn-minus-raduis"><span>-</span></button>
-                                    <input class="qty-value" placeholder="qty" type="number" value="1" size="1">
-                                    <button class="qty-btn-plus qty-btn-plus-raduis"><span>+</span></button>
-                                </div>
-                            </td>
-                            <td class="cart-col-total">
-                                $23.00
-                            </td>
-                            <td class="">
-                                <button class="remove-btn">&times;</button>
-                            </td>
-                        </tr>
+                                </td>
+                                <td class="cart-col-price">
+                                    $23.00
+                                </td>
+                                <td class="">
+                                    <div class="cart-qty-controls">
+                                        <button class="qty-btn-minus qty-btn-minus-raduis"><span>&minus;</span></button>
+                                        <input class="qty-value" placeholder="qty" type="number" value="1" size="1">
+                                        <button class="qty-btn-plus qty-btn-plus-raduis"><span>&plus;</span></button>
+                                    </div>
+                                </td>
+                                <td class="cart-col-total">
+                                    $23.00
+                                </td>
+                                <td class="">
+                                    <button class="remove-btn">&times;</button>
+                                </td>
+                            </tr>
 
-                    </tbody>
-                </table>
-                <div class="cart-summary">
-                    <div class="cart-subtotal float-end">
-                        <span>SUBTOTAL - </span>
-                        <span class="cart-total-amount">$46.50</span>
-                    </div>
-                    <div class="cart-actions">
-                        <button class="cart-btn cart-btn-secondary float-start">CONTINUE SHOPPING</button>
-                        <button class="cart-btn cart-btn-primary float-end">CHECKOUT</button>
-                    </div>
+                            <tr>
+                                <td class="px-4 pb-4 bg-dark-subtle" colspan="5">
+                                    <h3 class="cart-total text-end my-3">SUBTOTAL - $46.50 </h3>
+                                    <button class="cart-btn  float-start">CONTINUE SHOPPING</button>
+                                    <button class="cart-btn  float-end">CHECKOUT</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
                 </div>
             </div>
-        </div>
 
-    
-        <div id="tab-info" class="tab-pane">
-            <div class="container my-5 border py-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="row g-5">
-                          
-                            <div class="col-md-6">
-                                <h5 class="mb-4 fw-bold">SHOPPING ADDRESS</h5>
-                                <form>
-                                    <input type="text" class="form-control mb-3" placeholder="COUNTRY">
-                                    <input type="text" class="form-control mb-3" placeholder="STATE">
-                                    <input type="text" class="form-control mb-3" placeholder="CITY">
-                                    <input type="text" class="form-control mb-3" placeholder="ZIP CODE">
-                                    <input type="text" class="form-control mb-4" placeholder="ADDRESS">
-                                    <button type="button" class="btn btn-danger px-4 py-2 fw-bold">SHOPPING CART</button>
-                                </form>
+            <div id="tab-info" class="tab-pane">
+                <div class="container my-5 border py-5">
+                    <div class="row justify-content-center mx-5">
+                        <!-- <div class="col-md-10">
+                            <div class="row g-5"> -->
+
+                                <div class="col-md-5">
+                                    <h5 class="mb-4 fw-bold">SHOPPING ADDRESS</h5>
+                                    <form>
+                                        <input type="text" class="form-control mb-4 input" placeholder="COUNTRY">
+                                        <input type="text" class="form-control mb-4 input" placeholder="STATE">
+                                        <input type="text" class="form-control mb-4 input" placeholder="CITY">
+                                        <input type="text" class="form-control mb-4 input" placeholder="ZIP CODE">
+                                        <input type="text" class="form-control mb-4 input" placeholder="ADDRESS">
+                                     
+                                    </form>
+                                </div>
+
+                                <div class="col-2"></div>
+                                <div class="col-md-5">
+                                    <h5 class="mb-4 fw-bold text-center text-md-start">CONTACT INFORMATION</h5>
+                                    <form>
+                                        <input type="text" class="form-control mb-4 input" placeholder="FIRST NAME">
+                                        <input type="text" class="form-control mb-4 input" placeholder="LAST NAME">
+                                        <input type="email" class="form-control mb-4 input" placeholder="EMAIL">
+                                        <input type="text" class="form-control mb-4 input" placeholder="PHONE NUMBER">
+                                  
+                                    </form>
+                                </div>
+                                <div class="col-12">
+                                        
+                                    <button class="cart-btn  float-start"> SHOPPING CART</button>
+                                    <button class="cart-btn  float-end">CONTINUE</button>
+                                </div>
                             </div>
-                          
-                            <div class="col-md-6">
-                                <h5 class="mb-4 fw-bold text-center text-md-start">CONTACT INFORMATION</h5>
+                        <!-- </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div id="tab-payment" class="tab-pane">
+                <!-- Payment Method Step -->
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10">
+                            <div class="bg-white rounded shadow-sm p-5">
+                                <!-- Payment Options -->
+                                <div class="d-flex justify-content-center gap-4 mb-4">
+                                    <div class="payment-option selected">
+                                        <img src="/imgs/visacard.png" alt="Visa" width="60">
+                                    </div>
+                                    <div class="payment-option">
+                                        <img src="/imgs/mastercard.png" alt="Mastercard" width="60">
+                                    </div>
+                                    <div class="payment-option">
+                                        <img src="/imgs/discovercard.png" alt="Discover" width="60">
+                                    </div>
+                                    <div class="payment-option">
+                                        <img src="/imgs/paypal.png" alt="PayPal" width="60">
+                                    </div>
+                                </div>
+                                <!-- Payment Form -->
                                 <form>
-                                    <input type="text" class="form-control mb-3" placeholder="FIRST NAME">
-                                    <input type="text" class="form-control mb-3" placeholder="LAST NAME">
-                                    <input type="email" class="form-control mb-3" placeholder="EMAIL">
-                                    <input type="text" class="form-control mb-4" placeholder="PHONE NUMBER">
-                                    <div class="text-end">
-                                        <button type="button" class="btn btn-danger px-4 py-2 fw-bold">CONTINUE</button>
+                                    <input type="text" class="form-control mb-3 input" placeholder="CARD HOLDER NAME">
+                                    <input type="text" class="form-control mb- input" placeholder="CARD NUMBER">
+                                    <div class="row mb-4">
+                                        <label class="fw-bold mb-2">EXPIRY DATE</label>
+                                        <div class="col-md-4 mb-2 mb-md-0">
+                                            <input type="text" class="form-control" placeholder="MONTH">
+                                        </div>
+                                        <div class="col-md-4 mb-2 mb-md-0">
+                                            <input type="text" class="form-control" placeholder="YEAR">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-3">
+                                         <button class="cart-btn  "> SHOPPING CART</button>
+                                    <button class="cart-btn  ">PLACE ORDER</button>
+                                       
                                     </div>
                                 </form>
                             </div>
@@ -140,54 +196,6 @@
                 </div>
             </div>
         </div>
-        <div id="tab-payment" class="tab-pane">
-          <!-- Payment Method Step -->
-<div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-8 col-md-10">
-      <div class="bg-white rounded shadow-sm p-5">
-        <!-- Payment Options -->
-        <div class="d-flex justify-content-center gap-4 mb-4">
-          <div class="payment-option selected">
-            <img src="/imgs/visa.png" alt="Visa" width="60">
-          </div>
-          <div class="payment-option">
-            <img src="/imgs/mastercard.png" alt="Mastercard" width="60">
-          </div>
-          <div class="payment-option">
-            <img src="/imgs/discover.png" alt="Discover" width="60">
-          </div>
-          <div class="payment-option">
-            <img src="/imgs/paypal.png" alt="PayPal" width="60">
-          </div>
-        </div>
-        <!-- Payment Form -->
-        <form>
-          <input type="text" class="form-control mb-3" placeholder="CARD HOLDER NAME">
-          <input type="text" class="form-control mb-4" placeholder="CARD NUMBER">
-          <div class="row mb-4">
-            <label class="fw-bold mb-2">EXPIRY DATE</label>
-            <div class="col-md-4 mb-2 mb-md-0">
-              <input type="text" class="form-control" placeholder="MONTH">
-            </div>
-            <div class="col-md-4 mb-2 mb-md-0">
-              <input type="text" class="form-control" placeholder="YEAR">
-            </div>
-            <div class="col-md-4">
-              <input type="text" class="form-control" placeholder="CVV">
-            </div>
-          </div>
-          <div class="d-flex justify-content-center gap-3">
-            <button type="button" class="btn btn-outline-danger px-4 fw-bold">SHOPPING CART</button>
-            <button type="submit" class="btn btn-danger px-4 fw-bold">PLACE ORDER</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-    </div>
     </div>
 
 </div>
