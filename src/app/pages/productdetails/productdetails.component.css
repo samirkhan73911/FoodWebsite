@@ -1,0 +1,119 @@
+.product-details-page {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+.sidebar-filters {
+  border: 1px solid #eee;
+}
+.sidebar-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #e74c3c;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag {
+  background: #f8f8f8;
+  color: #444;
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 0.95em;
+  border: 1px solid #eee;
+}
+.rating-filter div {
+  color: #f39c12;
+  font-size: 1.1em;
+  margin-bottom: 2px;
+}
+.product-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.product-rating .stars {
+  color: #f39c12;
+  font-size: 1.2rem;
+}
+.product-price {
+  color: #e74c3c;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.product-meta {
+  color: #888;
+  font-size: 1rem;
+}
+.product-desc {
+  font-size: 1rem;
+  color: #444;
+}
+.qty-controls {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.qty-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #f8f8f8;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.qty-btn:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+.qty-value {
+  width: 36px;
+  text-align: center;
+  font-size: 1.1rem;
+  background: #fff;
+  color: #222;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.product-tabs .nav-tabs .nav-link {
+  color: #e74c3c;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid transparent;
+}
+.product-tabs .nav-tabs .nav-link.active {
+  color: #fff;
+  background: #e74c3c;
+  border-radius: 0;
+  border-bottom: 2px solid #e74c3c;
+}
+.product-tabs .tab-content {
+  border: 1px solid #eee;
+  border-top: none;
+}
+.related-title {
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 2rem;
+  color: #a0522d;
+  margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .sidebar-filters {
+    margin-bottom: 30px;
+  }
+}

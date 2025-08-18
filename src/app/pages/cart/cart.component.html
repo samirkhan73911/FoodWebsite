@@ -1,10 +1,10 @@
 <app-title [title]="'Shopping Cart'" [link]="'/home'" [page1]="'Home'" [page2]="'Shopping Cart'" />
 
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" role="tablist">
         <div class="col-md-10">
 
-            <ul class="nav nav-pills justify-content-between p-3 m-3" role="tablist">
+            <ul class="nav nav-pills justify-content-between p-3 m-3">
                 <li class="nav-item text-center">
                     <button class="nav-link cart-step-circle active" id="" data-bs-toggle="tab"
                         data-bs-target="#tab-cart" type="button" role="tab" aria-controls="tab-cart"
@@ -37,7 +37,7 @@
         <div class="col-12 tab-content">
 
             <div id="tab-cart" class="tab-pane active">
-                <div class="cart-container">
+                <div class="cart-container border">
                     <h4 class="cart-header">You have <span class="cart-items-count">2 items</span> in your order.</h4>
                     <table class="  table align-middle border">
                         <thead class="bg-dark-subtle">
@@ -57,7 +57,7 @@
                                 <td class="">
 
 
-                                    <a class="float-start" href="">
+                                    <a class="float-lg-start" href="">
 
                                         <img src="/imgs/pngegg(1).png" alt="Food" class="cart-img">
                                     </a>
@@ -67,9 +67,9 @@
                                         <h4 class="cart-title">Food Title Here</h4>
                                         <p class="cart-desc m-0">Cursus / Dictum / Risus</p>
                                         <div class="cart-stars">
-                                            <rating [(ngModel)]="rate" [max]="max" 
-                                                (keyup)="confirmSelection($event)"></rating>
-                                           
+                                            <rating [(ngModel)]="rate" [max]="max" (keyup)="confirmSelection($event)">
+                                            </rating>
+
                                         </div>
                                     </div>
 
@@ -79,9 +79,9 @@
                                 </td>
                                 <td class="">
                                     <div class="cart-qty-controls">
-                                        <button class="qty-btn-minus qty-btn-minus-raduis"><span>&minus;</span></button>
+                                        <button class="qty-btn qty-btn-minus-raduis"><span>&minus;</span></button>
                                         <input class="qty-value" placeholder="qty" type="number" value="1" size="1">
-                                        <button class="qty-btn-plus qty-btn-plus-raduis"><span>&plus;</span></button>
+                                        <button class="qty-btn qty-btn-plus-raduis"><span>&plus;</span></button>
                                     </div>
                                 </td>
                                 <td class="cart-col-total">
@@ -96,7 +96,10 @@
                                 <td class="px-4 pb-4 bg-dark-subtle" colspan="5">
                                     <h3 class="cart-total text-end my-3">SUBTOTAL - $46.50 </h3>
                                     <button class="cart-btn  float-start">CONTINUE SHOPPING</button>
-                                    <button class="cart-btn  float-end">CHECKOUT</button>
+                                    <button class="cart-btn float-end" data-bs-toggle="tab" data-bs-target="#tab-info"
+                                        type="button" role="tab" aria-controls="tab-info"
+                                        aria-selected="false">CHECKOUT</button>
+
                                 </td>
                             </tr>
                         </tbody>
@@ -113,36 +116,38 @@
                         <!-- <div class="col-md-10">
                             <div class="row g-5"> -->
 
-                                <div class="col-md-5">
-                                    <h5 class="mb-4 fw-bold">SHOPPING ADDRESS</h5>
-                                    <form>
-                                        <input type="text" class="form-control mb-4 input" placeholder="COUNTRY">
-                                        <input type="text" class="form-control mb-4 input" placeholder="STATE">
-                                        <input type="text" class="form-control mb-4 input" placeholder="CITY">
-                                        <input type="text" class="form-control mb-4 input" placeholder="ZIP CODE">
-                                        <input type="text" class="form-control mb-4 input" placeholder="ADDRESS">
-                                     
-                                    </form>
-                                </div>
+                        <div class="col-md-5">
+                            <h5 class="mb-4 fw-bold">SHOPPING ADDRESS</h5>
+                            <form>
+                                <input type="text" class="form-control mb-4 input" placeholder="COUNTRY">
+                                <input type="text" class="form-control mb-4 input" placeholder="STATE">
+                                <input type="text" class="form-control mb-4 input" placeholder="CITY">
+                                <input type="text" class="form-control mb-4 input" placeholder="ZIP CODE">
+                                <input type="text" class="form-control mb-4 input" placeholder="ADDRESS">
 
-                                <div class="col-2"></div>
-                                <div class="col-md-5">
-                                    <h5 class="mb-4 fw-bold text-center text-md-start">CONTACT INFORMATION</h5>
-                                    <form>
-                                        <input type="text" class="form-control mb-4 input" placeholder="FIRST NAME">
-                                        <input type="text" class="form-control mb-4 input" placeholder="LAST NAME">
-                                        <input type="email" class="form-control mb-4 input" placeholder="EMAIL">
-                                        <input type="text" class="form-control mb-4 input" placeholder="PHONE NUMBER">
-                                  
-                                    </form>
-                                </div>
-                                <div class="col-12">
-                                        
-                                    <button class="cart-btn  float-start"> SHOPPING CART</button>
-                                    <button class="cart-btn  float-end">CONTINUE</button>
-                                </div>
-                            </div>
-                        <!-- </div>
+                            </form>
+                        </div>
+
+                        <div class="col-2"></div>
+                        <div class="col-md-5">
+                            <h5 class="mb-4 fw-bold text-start">CONTACT INFORMATION</h5>
+                            <form>
+                                <input type="text" class="form-control mb-4 input" placeholder="FIRST NAME">
+                                <input type="text" class="form-control mb-4 input" placeholder="LAST NAME">
+                                <input type="email" class="form-control mb-4 input" placeholder="EMAIL">
+                                <input type="text" class="form-control mb-4 input" placeholder="PHONE NUMBER">
+
+                            </form>
+                        </div>
+                        <div class="col-12">
+
+                            <button class="cart-btn  float-start"> SHOPPING CART</button>
+                            <button class="cart-btn  float-end" data-bs-toggle="tab" data-bs-target="#tab-payment"
+                                type="button" role="tab" aria-controls="tab-payment"
+                                aria-selected="false">CONTINUE</button>
+                        </div>
+                    </div>
+                    <!-- </div>
                     </div> -->
                 </div>
             </div>
@@ -151,10 +156,12 @@
                 <!-- Payment Method Step -->
                 <div class="container my-5">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8 col-md-10">
-                            <div class="bg-white rounded shadow-sm p-5">
+                        <div class="col-sm-12 bg-white rounded border p-5">
+                           
                                 <!-- Payment Options -->
-                                <div class="d-flex justify-content-center gap-4 mb-4">
+                                <div class="d-flex justify-content-center gap-4 mb-5">
+                                    
+                                       
                                     <div class="payment-option selected">
                                         <img src="/imgs/visacard.png" alt="Visa" width="60">
                                     </div>
@@ -169,7 +176,7 @@
                                     </div>
                                 </div>
                                 <!-- Payment Form -->
-                                <form>
+                                <form class="px-5 w-50 mx-auto">
                                     <input type="text" class="form-control mb-3 input" placeholder="CARD HOLDER NAME">
                                     <input type="text" class="form-control mb- input" placeholder="CARD NUMBER">
                                     <div class="row mb-4">
@@ -185,12 +192,12 @@
                                         </div>
                                     </div>
                                     <div class="d-flex justify-content-center gap-3">
-                                         <button class="cart-btn  "> SHOPPING CART</button>
-                                    <button class="cart-btn  ">PLACE ORDER</button>
-                                       
+                                        <button class="cart-btn  "> SHOPPING CART</button>
+                                        <button class="cart-btn  " routerLink="/ThankYoupage">PLACE ORDER</button>
+
                                     </div>
                                 </form>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

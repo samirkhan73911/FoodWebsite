@@ -5,12 +5,13 @@ import { CardComponent } from '../../Reuseable component/card/card.component';
 import { RatingComponent, RatingModule } from 'ngx-bootstrap/rating';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from "@angular/router";
 
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [NewsletterComponent, TitleComponent, CardComponent,RatingComponent,FormsModule],
+  imports: [NewsletterComponent, TitleComponent, CardComponent, RatingComponent, FormsModule, RouterLink],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })

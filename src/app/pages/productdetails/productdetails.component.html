@@ -1,0 +1,112 @@
+<app-title [title]="'product details'" [link]="'/home'" [page1]="'Home'" [page2]="'product details'" />
+
+<div class="product-details-page container my-5">
+  <div class="row ">
+    <!-- Sidebar Filters -->
+    <!-- <aside class="col-lg-3 mb-4">
+      <div class="sidebar-filters p-4 bg-white rounded shadow-sm">
+        <h5 class="sidebar-title mb-3">SEARCH FILTERS</h5>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Search Food">
+        </div>
+        <div class="mb-3">
+          <div class="fw-bold mb-2">Categories</div>
+          <div><input type="radio" name="cat"> Sandwiches</div>
+          <div><input type="radio" name="cat"> Fast Food</div>
+          <div><input type="radio" name="cat"> Vegetarian</div>
+          <div><input type="radio" name="cat"> Thai</div>
+          <div><input type="radio" name="cat"> Non Veg</div>
+          <div><input type="radio" name="cat"> Salads</div>
+        </div>
+        <div class="mb-3">
+          <div class="fw-bold mb-2">FOOD FOR</div>
+          <div><input type="radio" name="foodfor"> Delivery</div>
+          <div><input type="radio" name="foodfor"> Pickup</div>
+        </div>
+        <div class="mb-3">
+          <div class="fw-bold mb-2">POPULAR TAGS</div>
+          <div class="tags">
+            <span class="tag">Service ×</span>
+            <span class="tag">Cookies ×</span>
+            <span class="tag">Pizza ×</span>
+            <span class="tag">Tandoori Chicken ×</span>
+            <span class="tag">Cupcake ×</span>
+            <span class="tag">Burger ×</span>
+          </div>
+        </div>
+        <div>
+          <div class="fw-bold mb-2">RATING</div>
+          <div class="rating-filter">
+            <div>★★★★★</div>
+            <div>★★★★☆</div>
+            <div>★★★☆☆</div>
+            <div>★★☆☆☆</div>
+            <div>★☆☆☆☆</div>
+          </div>
+        </div>
+      </div>
+    </aside> -->
+    <!-- Product Details -->
+    <main class="col-12">
+      <div class="row">
+        <div class="col-md-5 text-center">
+          <img src="/imgs/pngegg(1).png" alt="Product" class="product-img mb-3">
+        </div>
+        <div class="col-md-7">
+          <h3 class="product-title mb-1">Product Title Here</h3>
+          <div class="product-rating mb-2">
+            <span class="stars">★★★★☆</span>
+          </div>
+          <div class="product-price mb-2">$23.00</div>
+          <div class="product-meta mb-2">Cursus / Dictum / Risus</div>
+          <div class="product-desc mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <div class="mb-3">
+            <span class="fw-bold">FOOD FOR</span> &nbsp;
+            <label class="me-2"><input type="radio" name="foodfor2" checked> Delivery</label>
+            <label><input type="radio" name="foodfor2"> Pickup</label>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="qty-controls me-3">
+              <button class="qty-btn">-</button>
+              <span class="qty-value">1</span>
+              <button class="qty-btn">+</button>
+            </div>
+            <button class="btn btn-outline-danger me-2">ORDER NOW</button>
+            <button class="btn btn-outline-danger">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs -->
+      <div class="product-tabs mt-5">
+        <ul class="nav nav-tabs mb-3">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#desc">DESCRIPTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#reviews">REVIEWS (3)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#addreview">ADD REVIEW</a>
+          </li>
+        </ul>
+        <div class="tab-content p-3 bg-white rounded-bottom">
+          <div class="tab-pane fade show active" id="desc">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="reviews">
+            <p>Reviews content here...</p>
+          </div>
+          <div class="tab-pane fade" id="addreview">
+            <p>Add review form here...</p>
+          </div>
+        </div>
+      </div>
+   
+    </main>
+  </div>
+</div>
+<app-newsletter/>
