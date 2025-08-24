@@ -17,8 +17,7 @@
       [ngClass]="{ '   menudescrption': cardType === 'menu', 'carddescrption': cardType === 'simple'}">
       {{ carddata.description }}
     </p>
-    <p class="card-text"
-      [ngClass]="{ ' ourmenuPrice': cardType === 'menu', ' cardprice': cardType === 'simple'}">
+    <p class="card-text" [ngClass]="{ ' ourmenuPrice': cardType === 'menu', ' cardprice': cardType === 'simple'}">
       {{ carddata.price}}$
     </p>
   </div>
@@ -29,9 +28,9 @@
   <img [src]="chefdata.imgurl" class="card-img-top" alt="img" loading="lazy">
 
   <div class="card-body p-3">
-    <h3 class="card-text text-center cardtitle m-3 mt-0 scoial">{{ chefdata.name }}</h3>
+    <h3 class="card-text text-center cardtitle m-3 mt-0 ">{{ chefdata.name }}</h3>
 
-    <ul class="list-unstyled list-inline text-center py-0">
+    <ul class="list-unstyled list-inline text-center py-0 social">
       <li class="list-inline-item " *ngIf="chefdata.links[0]">
         <a class="sociallinks" [href]="chefdata.links[0]"><img class="socialicons" src="/imgs/facebook-app-symbol.png"
             alt="Facebook" loading="lazy"></a>
@@ -65,11 +64,11 @@
     </h3>
 
     <p class="my-3 ourblogdescrption">
-      {{ blogdata.ourblogdescrption || 'May 15, 2017 / By admin / 3 Comments' }}
+      {{ blogdata.smalldescrption || 'May 15, 2017 / By admin / 3 Comments' }}
     </p>
 
     <p class="card-text  carddescrption">
-      {{ blogdata.carddescrption || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat
+      {{ blogdata.descrption || 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat
       nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan...' }}
     </p>
 

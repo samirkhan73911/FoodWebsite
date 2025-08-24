@@ -128,23 +128,20 @@
 
 
 
-.scoial ul li {
-  border-radius: 50%;
-  transition: ease-in-out 0.5s all;
-}
-.scoial ul li:first-child:hover {
+
+.social :first-child a:hover {
   background: #1d5add;
 }
 
-.scoial ul li:nth-child(2):hover {
+.social :nth-child(2) a:hover {
   background: #1da1f3;
 }
 
-.scoial ul li:nth-child(3):hover {
+.social :nth-child(3) a:hover {
   background: #ec20f7;
 }
 
-.scoial ul li:last-child:hover {
+.social :last-child a:hover {
   background: red;
 }
 

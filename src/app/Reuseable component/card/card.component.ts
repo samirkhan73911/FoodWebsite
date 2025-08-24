@@ -13,12 +13,14 @@ export class CardComponent {
   @Input() cardType: 'menu' | 'simple' | 'chef' | 'blog' = 'menu';
 
   @Input() carddata: {
+    id: number;
     imgurl: string;
     title: string;
     descsmall: string;
     description: string;
     price: number;
   } = {
+    id: 0,
     imgurl: '',
     title: '',
     descsmall: '',
@@ -27,11 +29,13 @@ export class CardComponent {
   };
   
   @Input() chefdata: {
+    id: number;
     imgurl: string;
     name: string;
     links: string[];
     description: string;
   } = {
+    id: 0,
     imgurl: '',
     name: '',
     links: [],
@@ -39,16 +43,18 @@ export class CardComponent {
   };
 
   @Input() blogdata: {
+    id: number;
     imgurl: string;
     title: string;
-    ourblogdescrption: string;
-    carddescrption: string;
+    smalldescrption: string;
+    descrption: string;
     link: string;
   } = {
+    id: 0,
     imgurl: '',
     title: '',
-    ourblogdescrption: '',
-    carddescrption: '',
+    smalldescrption: '',
+    descrption: '',
     link: '',
   };
 }

@@ -11,6 +11,7 @@ import { ForgetPasswordComponent } from './pages/forget-password/forget-password
 import { ReservationComponent } from './pages/reservation/reservation.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { ThankYoupageComponent } from './pages/thank-youpage/thank-youpage.component';
+import { ProductdetailsComponent } from './pages/productdetails/productdetails.component';
 
 
 
@@ -67,6 +68,10 @@ export const routes: Routes = [
     {
         path:"ThankYoupage",
         component:ThankYoupageComponent
+    },
+    {
+        path:"productdetailspage",
+        component:ProductdetailsComponent
     },
    
 ];
