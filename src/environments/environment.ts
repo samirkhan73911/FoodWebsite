@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000/cards'   // local JSON / mock API
+  apiUrl: 'http://localhost:3000'   // local JSON / mock API
 };
 
 

@@ -145,9 +145,14 @@
 
 
                 <owl-carousel-o id="bgSlideShow" [options]="Owlpopulardishes">
+                    @for (card of populardata; track $index) {
                     <ng-template carouselSlide>
+                        <app-card [cardType]="'popular'" [carddata]="card"></app-card>
+                    </ng-template>
+                    }
+                    <!-- <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -155,7 +160,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -163,7 +168,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -171,7 +176,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -179,7 +184,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -187,7 +192,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -195,7 +200,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -203,7 +208,7 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
@@ -211,20 +216,12 @@
                     </ng-template>
                     <ng-template carouselSlide>
 
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
+                        <app-card [cardType]="'popular'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
                             descsmall:'Cursus / Dictum / Risus',
                             description:'Some quick example text to build on the card title and make up the bulk of the card content.',
                             price:100}" />
 
-                    </ng-template>
-                    <ng-template carouselSlide>
-
-                        <app-card [cardType]="'simple'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                    </ng-template>
+                    </ng-template> -->
 
 
 
@@ -267,41 +264,41 @@
                         <li class="nav-item ">
                             <button class="nav-link active hilight" id="all-tab" data-bs-toggle="tab"
                                 data-bs-target="#all" type="button" role="tab" aria-controls="all"
-                                aria-selected="true">ALL</button>
+                                aria-selected="true" (click)="getelementbycategory('All')" >ALL</button>
                             <!-- <a ></a> -->
                         </li>
 
                         <li class="nav-item ">
                             <button class="nav-link hilight" id="breakfast-tab" data-bs-toggle="tab"
                                 data-bs-target="#breakfast" type="button" role="tab" aria-controls="breakfast-tab"
-                                aria-selected="true">breakfast</button>
+                                aria-selected="true" (click)="getelementbycategory('Breakfast')">breakfast</button>
                             <!-- <a class=" text-dark nav-link hilight" href="#breakfast" data-toggle="tab">breakfast</a> -->
                         </li>
 
                         <li class="nav-item ">
                             <button class="nav-link hilight" id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch"
-                                type="button" role="tab" aria-controls="lunch" aria-selected="true">lunch</button>
+                                type="button" role="tab" aria-controls="lunch" aria-selected="true" (click)="getelementbycategory('Lunch')">lunch</button>
                             <!-- <a class="  text-dark nav-link hilight" href="#lunch" data-toggle="tab">lunch</a> -->
                         </li>
 
                         <li class="nav-item ">
                             <button class="nav-link hilight" id="dinner-tab" data-bs-toggle="tab"
                                 data-bs-target="#dinner" type="button" role="tab" aria-controls="dinner"
-                                aria-selected="true">dinner</button>
+                                aria-selected="true" (click)="getelementbycategory('Dinner')">dinner</button>
                             <!-- <a class=" text-dark nav-link hilight" href="#dinner" data-toggle="tab">dinner</a> -->
                         </li>
 
                         <li class="nav-item ">
                             <button class="nav-link hilight" id="drinks-tab" data-bs-toggle="tab"
                                 data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks"
-                                aria-selected="true">drinks</button>
+                                aria-selected="true" (click)="getelementbycategory('Drinks')">drinks</button>
                             <!-- <a class=" text-dark nav-link hilight " href="#drinks" data-toggle="tab">drinks</a> -->
                         </li>
 
                         <li class="nav-item ">
                             <button class="nav-link hilight" id="others-tab" data-bs-toggle="tab"
                                 data-bs-target="#others" type="button" role="tab" aria-controls="others"
-                                aria-selected="true">others</button>
+                                aria-selected="true" (click)="getelementbycategory('Others')">others</button>
                             <!-- <a class=" text-dark nav-link hilight" href="#others" data-toggle="tab">others</a> -->
                         </li>
 
@@ -312,141 +309,21 @@
 
                     <div id="all" class="row tab-pane active" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
 
+                        @for (card of filterdata; track $index) {
                         <div class="col-12 col-sm-6  my-3">
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
+                          <app-card [cardType]="'menu'" [carddata]="card"></app-card>
                         </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
+                        }
 
                     </div>
 
-                    <div id="breakfast" class="row tab-pane " role="tabpanel" aria-labelledby="breakfast" tabindex="0">
+                   <div id="breakfast" class="row tab-pane " role="tabpanel" aria-labelledby="breakfast" tabindex="0">
 
+                        @for (card of filterdata; track $index) {
                         <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
+                          <app-card [cardType]="'menu'" [carddata]="card"></app-card>
                         </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
+                        }
 
 
 
@@ -454,299 +331,43 @@
 
                     <div id="lunch" class="row tab-pane " role="tabpanel" aria-labelledby="lunch-tab" tabindex="0">
 
+                        @for (card of filterdata; track $index) {
                         <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
+                          <app-card [cardType]="'menu'" [carddata]="card"></app-card>
                         </div>
+                        }
 
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
 
                     </div>
 
                     <div id="dinner" class="row tab-pane " role="tabpanel" aria-labelledby="dinner-tab" tabindex="0">
 
+                       @for (card of filterdata; track $index) {
                         <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
+                          <app-card [cardType]="'menu'" [carddata]="card"></app-card>
                         </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
+                        }
 
                     </div>
 
                     <div id="drinks" class="row tab-pane " role="tabpanel" aria-labelledby="drinks-tab" tabindex="0">
 
+                         @for (card of filterdata; track $index) {
                         <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
+                          <app-card [cardType]="'menu'" [carddata]="card"></app-card>
                         </div>
+                        }
 
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
 
                     </div>
 
                     <div id="others" class="row tab-pane " role="tabpanel" aria-labelledby="others-tab" tabindex="0">
 
+                         @for (card of filterdata; track $index) {
                         <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
+                          <app-card [cardType]="'menu'" [carddata]="card"></app-card>
                         </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(3).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(4).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg.png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(1).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
-
-                        <div class="col-12 col-sm-6  my-3">
-
-                            <app-card [cardType]="'menu'" [carddata]="{id:1,imgurl: '/imgs/pngegg(2).png', title:'Dish Name Here',
-                            descsmall:'Cursus / Dictum / Risus',
-                            description:'Some quick example text to build on the card title and make up the bulk of the card content.',
-                            price:100}" />
-
-                        </div>
+                        }
 
 
 
@@ -788,7 +409,13 @@
                         corrupti dolore ut assumenda vero?</p>
                 </div>
 
-                <div class="col-12 col-sm-4 my-3 pt-2">
+                  @for (card of blogdata; track $index) {
+                        <div class="col-12 col-sm-4 my-3 pt-2">
+                    <app-card [cardType]="'blog'" [carddata]="card" />
+
+                </div>
+                        }
+                <!-- <div class="col-12 col-sm-4 my-3 pt-2">
                     <app-card [cardType]="'blog'" [blogdata]="{id:1, imgurl: '/imgs/blog img.jpg',
                     title: 'Blog Title Here',
                     smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
@@ -811,7 +438,7 @@
                     smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
                     descrption: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id. Nullam ultricies eu turpis at accumsan...',
                     link: ''}" />
-                </div>
+                </div> -->
 
             </div>
         </div>

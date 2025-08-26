@@ -1,21 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { NewsletterComponent } from '../../component/newsletter/newsletter.component';
 import { TitleComponent } from '../../Reuseable component/title/title.component';
-import { CardComponent } from "../../Reuseable component/card/card.component";
+import { CardComponent } from '../../Reuseable component/card/card.component';
+import { Chefcard } from '../../core/models/interface/Idata';
+import { CardServiceService } from '../../core/services/card-service.service';
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [NewsletterComponent, TitleComponent, CarouselModule, CardComponent],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  //  chefdata: { imgurl: string; name: string;links:string[], description: string }={
-  //   imgurl: '',
-  //   name: '',
-  //   links: [],
-  //   description: ''
-  // };
+  private cardsrv = inject(CardServiceService);
 
+  chefdata: Chefcard[] = [];
+
+  ngOnInit() {
+    this.getchefs();
+  }
+
+  getchefs() {
+    this.cardsrv.getChefs().subscribe((res: any) => {
+      this.chefdata = res;
+      this.chefdata = this.chefdata.slice(0, 4);
+    });
+  }
 }

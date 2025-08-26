@@ -1,1660 +1,1350 @@
 {
-  "cards": {
-    "menu": [
-      {
-        "id": 1,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 1",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 1.",
-        "price": 210,
-        "isAvailable": true,
-        "rating": 3.1
-      },
-      {
-        "id": 2,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 2",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 2.",
-        "price": 220,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 4,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Breakfast Item 4",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 4.",
-        "price": 240,
-        "isAvailable": true,
-        "rating": 4.5
-      },
-      {
-        "id": 5,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 5",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 5.",
-        "price": 250,
-        "isAvailable": true,
-        "rating": 4.2
-      },
-      {
-        "id": 6,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 6",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 6.",
-        "price": 260,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 8,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 8",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 8.",
-        "price": 280,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 9,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 9",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 9.",
-        "price": 290,
-        "isAvailable": true,
-        "rating": 3.8
-      },
-      {
-        "id": 10,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Breakfast Item 10",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 10.",
-        "price": 300,
-        "isAvailable": true,
-        "rating": 4.6
-      },
-      {
-        "id": 11,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 11",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 11.",
-        "price": 310,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 13,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 13",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 13.",
-        "price": 330,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 14,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 14",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 14.",
-        "price": 340,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 15,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 15",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 15.",
-        "price": 350,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 16,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 16",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 16.",
-        "price": 360,
-        "isAvailable": true,
-        "rating": 3.3
-      },
-      {
-        "id": 18,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 18",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 18.",
-        "price": 380,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 19,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 19",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 19.",
-        "price": 390,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 20,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 20",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 20.",
-        "price": 400,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 21,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 21",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 21.",
-        "price": 410,
-        "isAvailable": true,
-        "rating": 4.2
-      },
-      {
-        "id": 23,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 23",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 23.",
-        "price": 430,
-        "isAvailable": true,
-        "rating": 3.3
-      },
-      {
-        "id": 24,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 24",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 24.",
-        "price": 440,
-        "isAvailable": true,
-        "rating": 3.8
-      },
-      {
-        "id": 25,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Breakfast Item 25",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 25.",
-        "price": 450,
-        "isAvailable": true,
-        "rating": 3.2
-      },
-      {
-        "id": 26,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Breakfast Item 26",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 26.",
-        "price": 460,
-        "isAvailable": true,
-        "rating": 3.2
-      },
-      {
-        "id": 27,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 27",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 27.",
-        "price": 470,
-        "isAvailable": true,
-        "rating": 4.0
-      },
-      {
-        "id": 29,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 29",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 29.",
-        "price": 490,
-        "isAvailable": true,
-        "rating": 3.3
-      },
-      {
-        "id": 30,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 30",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 30.",
-        "price": 500,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 31,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 1",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 1.",
-        "price": 410,
-        "isAvailable": true,
-        "rating": 4.4
-      },
-      {
-        "id": 32,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 2",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 2.",
-        "price": 420,
-        "isAvailable": true,
-        "rating": 3.6
-      },
-      {
-        "id": 33,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 3",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 3.",
-        "price": 430,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 34,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 4",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 4.",
-        "price": 440,
-        "isAvailable": true,
-        "rating": 4.2
-      },
-      {
-        "id": 35,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 5",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 5.",
-        "price": 450,
-        "isAvailable": true,
-        "rating": 4.4
-      },
-      {
-        "id": 37,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 7",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 7.",
-        "price": 470,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 38,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 8",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 8.",
-        "price": 480,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 39,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 9",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 9.",
-        "price": 490,
-        "isAvailable": true,
-        "rating": 3.9
-      },
-      {
-        "id": 40,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 10",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 10.",
-        "price": 500,
-        "isAvailable": true,
-        "rating": 3.0
-      },
-      {
-        "id": 42,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 12",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 12.",
-        "price": 520,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 43,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 13",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 13.",
-        "price": 530,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 44,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 14",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 14.",
-        "price": 540,
-        "isAvailable": true,
-        "rating": 4.7
-      },
-      {
-        "id": 45,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 15",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 15.",
-        "price": 550,
-        "isAvailable": true,
-        "rating": 3.9
-      },
-      {
-        "id": 46,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Lunch Item 16",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 16.",
-        "price": 560,
-        "isAvailable": true,
-        "rating": 3.1
-      },
-      {
-        "id": 47,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 17",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 17.",
-        "price": 570,
-        "isAvailable": true,
-        "rating": 4.6
-      },
-      {
-        "id": 49,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 19",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 19.",
-        "price": 590,
-        "isAvailable": true,
-        "rating": 3.2
-      },
-      {
-        "id": 50,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 20",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 20.",
-        "price": 600,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 51,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 21",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 21.",
-        "price": 610,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 52,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Lunch Item 22",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 22.",
-        "price": 620,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 53,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Lunch Item 23",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 23.",
-        "price": 630,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 54,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Lunch Item 24",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 24.",
-        "price": 640,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 55,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Lunch Item 25",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 25.",
-        "price": 650,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 57,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 27",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 27.",
-        "price": 670,
-        "isAvailable": true,
-        "rating": 3.5
-      },
-      {
-        "id": 58,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Lunch Item 28",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 28.",
-        "price": 680,
-        "isAvailable": true,
-        "rating": 4.6
-      },
-      {
-        "id": 59,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 29",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 29.",
-        "price": 690,
-        "isAvailable": true,
-        "rating": 4.5
-      },
-      {
-        "id": 60,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Lunch Item 30",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 30.",
-        "price": 700,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 61,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Dinner Item 1",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 1.",
-        "price": 810,
-        "isAvailable": true,
-        "rating": 4.7
-      },
-      {
-        "id": 63,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 3",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 3.",
-        "price": 830,
-        "isAvailable": true,
-        "rating": 4.0
-      },
-      {
-        "id": 64,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 4",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 4.",
-        "price": 840,
-        "isAvailable": true,
-        "rating": 3.9
-      },
-      {
-        "id": 65,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 5",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 5.",
-        "price": 850,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 66,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 6",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 6.",
-        "price": 860,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 67,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 7",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 7.",
-        "price": 870,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 68,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 8",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 8.",
-        "price": 880,
-        "isAvailable": true,
-        "rating": 4.3
-      },
-      {
-        "id": 70,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Dinner Item 10",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 10.",
-        "price": 900,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 71,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Dinner Item 11",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 11.",
-        "price": 910,
-        "isAvailable": true,
-        "rating": 3.1
-      },
-      {
-        "id": 72,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 12",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 12.",
-        "price": 920,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 73,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 13",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 13.",
-        "price": 930,
-        "isAvailable": true,
-        "rating": 4.7
-      },
-      {
-        "id": 74,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 14",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 14.",
-        "price": 940,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 75,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 15",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 15.",
-        "price": 950,
-        "isAvailable": true,
-        "rating": 3.2
-      },
-      {
-        "id": 77,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 17",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 17.",
-        "price": 970,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 78,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 18",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 18.",
-        "price": 980,
-        "isAvailable": true,
-        "rating": 5.0
-      },
-      {
-        "id": 79,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 19",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 19.",
-        "price": 990,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 80,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Dinner Item 20",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 20.",
-        "price": 1000,
-        "isAvailable": true,
-        "rating": 4.2
-      },
-      {
-        "id": 81,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 21",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 21.",
-        "price": 1010,
-        "isAvailable": true,
-        "rating": 3.8
-      },
-      {
-        "id": 82,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 22",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 22.",
-        "price": 1020,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 84,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 24",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 24.",
-        "price": 1040,
-        "isAvailable": true,
-        "rating": 3.3
-      },
-      {
-        "id": 85,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 25",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 25.",
-        "price": 1050,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 86,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 26",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 26.",
-        "price": 1060,
-        "isAvailable": true,
-        "rating": 4.0
-      },
-      {
-        "id": 87,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Dinner Item 27",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 27.",
-        "price": 1070,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 88,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Dinner Item 28",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 28.",
-        "price": 1080,
-        "isAvailable": true,
-        "rating": 3.9
-      },
-      {
-        "id": 90,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Dinner Item 30",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 30.",
-        "price": 1100,
-        "isAvailable": true,
-        "rating": 5.0
-      },
-      {
-        "id": 91,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Other Item 1",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 1.",
-        "price": 160,
-        "isAvailable": true,
-        "rating": 4.7
-      },
-      {
-        "id": 92,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 2",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 2.",
-        "price": 170,
-        "isAvailable": true,
-        "rating": 5.0
-      },
-      {
-        "id": 93,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 3",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 3.",
-        "price": 180,
-        "isAvailable": true,
-        "rating": 4.0
-      },
-      {
-        "id": 94,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 4",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 4.",
-        "price": 190,
-        "isAvailable": true,
-        "rating": 4.2
-      },
-      {
-        "id": 95,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 5",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 5.",
-        "price": 200,
-        "isAvailable": true,
-        "rating": 4.4
-      },
-      {
-        "id": 96,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 6",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 6.",
-        "price": 210,
-        "isAvailable": true,
-        "rating": 3.0
-      },
-      {
-        "id": 98,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 8",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 8.",
-        "price": 230,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 100,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 10",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 10.",
-        "price": 250,
-        "isAvailable": true,
-        "rating": 3.1
-      },
-      {
-        "id": 101,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 11",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 11.",
-        "price": 260,
-        "isAvailable": true,
-        "rating": 3.9
-      },
-      {
-        "id": 102,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 12",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 12.",
-        "price": 270,
-        "isAvailable": true,
-        "rating": 4.9
-      },
-      {
-        "id": 103,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 13",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 13.",
-        "price": 280,
-        "isAvailable": true,
-        "rating": 3.2
-      },
-      {
-        "id": 104,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 14",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 14.",
-        "price": 290,
-        "isAvailable": true,
-        "rating": 3.6
-      },
-      {
-        "id": 108,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 18",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 18.",
-        "price": 330,
-        "isAvailable": true,
-        "rating": 3.1
-      },
-      {
-        "id": 109,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 19",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 19.",
-        "price": 340,
-        "isAvailable": true,
-        "rating": 3.9
-      },
-      {
-        "id": 110,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 20",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 20.",
-        "price": 350,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 111,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Other Item 21",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 21.",
-        "price": 360,
-        "isAvailable": true,
-        "rating": 3.8
-      },
-      {
-        "id": 112,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 22",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 22.",
-        "price": 370,
-        "isAvailable": true,
-        "rating": 3.3
-      },
-      {
-        "id": 117,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 27",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 27.",
-        "price": 420,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 118,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Other Item 28",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 28.",
-        "price": 430,
-        "isAvailable": true,
-        "rating": 3.7
-      },
-      {
-        "id": 119,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 29",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 29.",
-        "price": 440,
-        "isAvailable": true,
-        "rating": 4.6
-      },
-      {
-        "id": 120,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 30",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 30.",
-        "price": 450,
-        "isAvailable": true,
-        "rating": 4.3
-      }
-    ],
-   
-    "popular": [
-      {
-        "id": 3,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 3",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 3.",
-        "price": 230,
-        "isAvailable": true,
-        "rating": 3.8
-      },
-      {
-        "id": 7,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 7",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 7.",
-        "price": 270,
-        "isAvailable": true,
-        "rating": 4.5
-      },
-      {
-        "id": 12,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 12",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 12.",
-        "price": 320,
-        "isAvailable": true,
-        "rating": 3.5
-      },
-      {
-        "id": 17,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Breakfast Item 17",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 17.",
-        "price": 370,
-        "isAvailable": true,
-        "rating": 4.0
-      },
-      {
-        "id": 22,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Breakfast Item 22",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 22.",
-        "price": 420,
-        "isAvailable": true,
-        "rating": 3.0
-      },
-      {
-        "id": 28,
-        "category": "Breakfast",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Breakfast Item 28",
-        "descsmall": "Breakfast Special",
-        "description": "Delicious breakfast option number 28.",
-        "price": 480,
-        "isAvailable": true,
-        "rating": 4.6
-      },
-      {
-        "id": 36,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Lunch Item 6",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 6.",
-        "price": 460,
-        "isAvailable": true,
-        "rating": 4.6
-      },
-      {
-        "id": 41,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 11",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 11.",
-        "price": 510,
-        "isAvailable": true,
-        "rating": 4.2
-      },
-      {
-        "id": 48,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 18",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 18.",
-        "price": 580,
-        "isAvailable": true,
-        "rating": 4.3
-      },
-      {
-        "id": 56,
-        "category": "Lunch",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Lunch Item 26",
-        "descsmall": "Lunch Special",
-        "description": "Delicious lunch option number 26.",
-        "price": 660,
-        "isAvailable": true,
-        "rating": 3.4
-      },
-      {
-        "id": 62,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(2).png",
-        "title": "Dinner Item 2",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 2.",
-        "price": 820,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 69,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 9",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 9.",
-        "price": 890,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 76,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Dinner Item 16",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 16.",
-        "price": 960,
-        "isAvailable": true,
-        "rating": 3.0
-      },
-      {
-        "id": 83,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(1).png",
-        "title": "Dinner Item 23",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 23.",
-        "price": 1030,
-        "isAvailable": true,
-        "rating": 4.5
-      },
-      {
-        "id": 89,
-        "category": "Dinner",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Dinner Item 29",
-        "descsmall": "Dinner Special",
-        "description": "Delicious dinner option number 29.",
-        "price": 1090,
-        "isAvailable": true,
-        "rating": 3.5
-      },
-      {
-        "id": 97,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 7",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 7.",
-        "price": 220,
-        "isAvailable": true,
-        "rating": 4.1
-      },
-      {
-        "id": 99,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 9",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 9.",
-        "price": 240,
-        "isAvailable": true,
-        "rating": 3.0
-      },
-      {
-        "id": 105,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 15",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 15.",
-        "price": 300,
-        "isAvailable": true,
-        "rating": 4.5
-      },
-      {
-        "id": 106,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 16",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 16.",
-        "price": 310,
-        "isAvailable": true,
-        "rating": 4.5
-      },
-      {
-        "id": 107,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 17",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 17.",
-        "price": 320,
-        "isAvailable": true,
-        "rating": 3.6
-      },
-      {
-        "id": 113,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 23",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 23.",
-        "price": 380,
-        "isAvailable": true,
-        "rating": 3.0
-      },
-      {
-        "id": 114,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 24",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 24.",
-        "price": 390,
-        "isAvailable": true,
-        "rating": 4.8
-      },
-      {
-        "id": 115,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(4).png",
-        "title": "Other Item 25",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 25.",
-        "price": 400,
-        "isAvailable": true,
-        "rating": 3.6
-      },
-      {
-        "id": 116,
-        "category": "Other",
-        "imgurl": "/imgs/pngegg(3).png",
-        "title": "Other Item 26",
-        "descsmall": "Other Special",
-        "description": "Delicious other option number 26.",
-        "price": 410,
-        "isAvailable": true,
-        "rating": 3.4
-      }
-    ],
-
-     "chef": [
-      {
-        "id": 2001,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 1",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 1 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2002,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 2",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 2 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2003,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 3",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 3 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2004,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 4",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 4 is an expert in creating delicious meals and specializes in French cuisine."
-      },
-      {
-        "id": 2005,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 5",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 5 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2006,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 6",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 6 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2007,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 7",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 7 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2008,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 8",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 8 is an expert in creating delicious meals and specializes in French cuisine."
-      },
-      {
-        "id": 2009,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 9",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 9 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2010,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 10",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 10 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2011,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 11",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 11 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2012,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 12",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 12 is an expert in creating delicious meals and specializes in French cuisine."
-      },
-      {
-        "id": 2013,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 13",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 13 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2014,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 14",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 14 is an expert in creating delicious meals and specializes in Italian cuisine."
-      },
-      {
-        "id": 2015,
-        "imgurl": "/imgs/chef1.jpg",
-        "name": "Chef 15",
-        "links": [
-          "https://facebook.com",
-          "https://twitter.com",
-          "https://instagram.com"
-        ],
-        "description": "Chef 15 is an expert in creating delicious meals and specializes in Italian cuisine."
-      }
-    ],
-
-    "blog": [
-      {
-        "id": 1001,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 1",
-        "smalldescrption": "2025-08-01 / By Author 1",
-        "descrption": "This is a detailed description for food blog post 1. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/1"
-      },
-      {
-        "id": 1002,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 2",
-        "smalldescrption": "2025-08-02 / By Author 2",
-        "descrption": "This is a detailed description for food blog post 2. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/2"
-      },
-      {
-        "id": 1003,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 3",
-        "smalldescrption": "2025-08-03 / By Author 3",
-        "descrption": "This is a detailed description for food blog post 3. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/3"
-      },
-      {
-        "id": 1004,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 4",
-        "smalldescrption": "2025-08-04 / By Author 4",
-        "descrption": "This is a detailed description for food blog post 4. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/4"
-      },
-      {
-        "id": 1005,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 5",
-        "smalldescrption": "2025-08-05 / By Author 5",
-        "descrption": "This is a detailed description for food blog post 5. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/5"
-      },
-      {
-        "id": 1006,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 6",
-        "smalldescrption": "2025-08-06 / By Author 6",
-        "descrption": "This is a detailed description for food blog post 6. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/6"
-      },
-      {
-        "id": 1007,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 7",
-        "smalldescrption": "2025-08-07 / By Author 7",
-        "descrption": "This is a detailed description for food blog post 7. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/7"
-      },
-      {
-        "id": 1008,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 8",
-        "smalldescrption": "2025-08-08 / By Author 8",
-        "descrption": "This is a detailed description for food blog post 8. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/8"
-      },
-      {
-        "id": 1009,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 9",
-        "smalldescrption": "2025-08-09 / By Author 9",
-        "descrption": "This is a detailed description for food blog post 9. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/9"
-      },
-      {
-        "id": 1010,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 10",
-        "smalldescrption": "2025-08-10 / By Author 10",
-        "descrption": "This is a detailed description for food blog post 10. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/10"
-      },
-      {
-        "id": 1011,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 11",
-        "smalldescrption": "2025-08-11 / By Author 11",
-        "descrption": "This is a detailed description for food blog post 11. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/11"
-      },
-      {
-        "id": 1012,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 12",
-        "smalldescrption": "2025-08-12 / By Author 12",
-        "descrption": "This is a detailed description for food blog post 12. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/12"
-      },
-      {
-        "id": 1013,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 13",
-        "smalldescrption": "2025-08-13 / By Author 13",
-        "descrption": "This is a detailed description for food blog post 13. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/13"
-      },
-      {
-        "id": 1014,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 14",
-        "smalldescrption": "2025-08-14 / By Author 14",
-        "descrption": "This is a detailed description for food blog post 14. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/14"
-      },
-      {
-        "id": 1015,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 15",
-        "smalldescrption": "2025-08-15 / By Author 15",
-        "descrption": "This is a detailed description for food blog post 15. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/15"
-      },
-      {
-        "id": 1016,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 16",
-        "smalldescrption": "2025-08-16 / By Author 16",
-        "descrption": "This is a detailed description for food blog post 16. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/16"
-      },
-      {
-        "id": 1017,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 17",
-        "smalldescrption": "2025-08-17 / By Author 17",
-        "descrption": "This is a detailed description for food blog post 17. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/17"
-      },
-      {
-        "id": 1018,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 18",
-        "smalldescrption": "2025-08-18 / By Author 18",
-        "descrption": "This is a detailed description for food blog post 18. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/18"
-      },
-      {
-        "id": 1019,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 19",
-        "smalldescrption": "2025-08-19 / By Author 19",
-        "descrption": "This is a detailed description for food blog post 19. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/19"
-      },
-      {
-        "id": 1020,
-        "imgurl": "/imgs/blog img.jpg",
-        "title": "Food Blog Post 20",
-        "smalldescrption": "2025-08-20 / By Author 20",
-        "descrption": "This is a detailed description for food blog post 20. Learn amazing recipes, cooking tips, and more!",
-        "link": "/blogs/20"
-      }
-    ]
-  }
+  "menu": [
+    {
+      "id": 0,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "All Item 1",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 1.",
+      "price": 186,
+      "isAvailable": true,
+      "rating": 2.9
+    },
+    {
+      "id": 1,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "All Item 2",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 2.",
+      "price": 291,
+      "isAvailable": false,
+      "rating": 4.1
+    },
+    {
+      "id": 2,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "All Item 3",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 3.",
+      "price": 486,
+      "isAvailable": false,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "All Item 4",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 4.",
+      "price": 571,
+      "isAvailable": true,
+      "rating": 3.2
+    },
+    {
+      "id": 4,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "All Item 5",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 5.",
+      "price": 590,
+      "isAvailable": false,
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "All Item 6",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 6.",
+      "price": 583,
+      "isAvailable": false,
+      "rating": 2.9
+    },
+    {
+      "id": 6,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "All Item 7",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 7.",
+      "price": 585,
+      "isAvailable": true,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "All Item 8",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 8.",
+      "price": 437,
+      "isAvailable": false,
+      "rating": 4.5
+    },
+    {
+      "id": 8,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "All Item 9",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 9.",
+      "price": 507,
+      "isAvailable": false,
+      "rating": 2.5
+    },
+    {
+      "id": 9,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "All Item 10",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 10.",
+      "price": 526,
+      "isAvailable": true,
+      "rating": 4
+    },
+    {
+      "id": 10,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "All Item 11",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 11.",
+      "price": 565,
+      "isAvailable": false,
+      "rating": 4.8
+    },
+    {
+      "id": 11,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "All Item 12",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 12.",
+      "price": 246,
+      "isAvailable": false,
+      "rating": 2.8
+    },
+    {
+      "id": 12,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "All Item 13",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 13.",
+      "price": 158,
+      "isAvailable": false,
+      "rating": 5
+    },
+    {
+      "id": 13,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "All Item 14",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 14.",
+      "price": 405,
+      "isAvailable": true,
+      "rating": 4.1
+    },
+    {
+      "id": 14,
+      "category": "All",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "All Item 15",
+      "descsmall": "All Special",
+      "description": "Delicious all option number 15.",
+      "price": 117,
+      "isAvailable": false,
+      "rating": 4.4
+    },
+    {
+      "id": 15,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Breakfast Item 1",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 1.",
+      "price": 544,
+      "isAvailable": false,
+      "rating": 4.5
+    },
+    {
+      "id": 16,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Breakfast Item 2",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 2.",
+      "price": 400,
+      "isAvailable": true,
+      "rating": 2.6
+    },
+    {
+      "id": 17,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Breakfast Item 3",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 3.",
+      "price": 180,
+      "isAvailable": false,
+      "rating": 4.9
+    },
+    {
+      "id": 18,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Breakfast Item 4",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 4.",
+      "price": 238,
+      "isAvailable": false,
+      "rating": 4.3
+    },
+    {
+      "id": 19,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Breakfast Item 5",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 5.",
+      "price": 215,
+      "isAvailable": false,
+      "rating": 3.5
+    },
+    {
+      "id": 20,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Breakfast Item 6",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 6.",
+      "price": 222,
+      "isAvailable": false,
+      "rating": 3
+    },
+    {
+      "id": 21,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Breakfast Item 7",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 7.",
+      "price": 388,
+      "isAvailable": false,
+      "rating": 4.3
+    },
+    {
+      "id": 22,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Breakfast Item 8",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 8.",
+      "price": 313,
+      "isAvailable": true,
+      "rating": 2.7
+    },
+    {
+      "id": 23,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Breakfast Item 9",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 9.",
+      "price": 221,
+      "isAvailable": false,
+      "rating": 3.5
+    },
+    {
+      "id": 24,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Breakfast Item 10",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 10.",
+      "price": 337,
+      "isAvailable": false,
+      "rating": 2.6
+    },
+    {
+      "id": 25,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Breakfast Item 11",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 11.",
+      "price": 447,
+      "isAvailable": false,
+      "rating": 3.7
+    },
+    {
+      "id": 26,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Breakfast Item 12",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 12.",
+      "price": 519,
+      "isAvailable": true,
+      "rating": 2.6
+    },
+    {
+      "id": 27,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Breakfast Item 13",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 13.",
+      "price": 362,
+      "isAvailable": true,
+      "rating": 2.5
+    },
+    {
+      "id": 28,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Breakfast Item 14",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 14.",
+      "price": 569,
+      "isAvailable": false,
+      "rating": 3.2
+    },
+    {
+      "id": 29,
+      "category": "Breakfast",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Breakfast Item 15",
+      "descsmall": "Breakfast Special",
+      "description": "Delicious breakfast option number 15.",
+      "price": 361,
+      "isAvailable": true,
+      "rating": 3.9
+    },
+    {
+      "id": 30,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Lunch Item 1",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 1.",
+      "price": 249,
+      "isAvailable": true,
+      "rating": 4
+    },
+    {
+      "id": 31,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Lunch Item 2",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 2.",
+      "price": 193,
+      "isAvailable": true,
+      "rating": 4.7
+    },
+    {
+      "id": 32,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Lunch Item 3",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 3.",
+      "price": 119,
+      "isAvailable": true,
+      "rating": 3.1
+    },
+    {
+      "id": 33,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Lunch Item 4",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 4.",
+      "price": 304,
+      "isAvailable": false,
+      "rating": 2.5
+    },
+    {
+      "id": 34,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Lunch Item 5",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 5.",
+      "price": 581,
+      "isAvailable": true,
+      "rating": 4.5
+    },
+    {
+      "id": 35,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Lunch Item 6",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 6.",
+      "price": 410,
+      "isAvailable": false,
+      "rating": 3.9
+    },
+    {
+      "id": 36,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Lunch Item 7",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 7.",
+      "price": 511,
+      "isAvailable": false,
+      "rating": 4.5
+    },
+    {
+      "id": 37,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Lunch Item 8",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 8.",
+      "price": 552,
+      "isAvailable": true,
+      "rating": 4.7
+    },
+    {
+      "id": 38,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Lunch Item 9",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 9.",
+      "price": 325,
+      "isAvailable": false,
+      "rating": 5
+    },
+    {
+      "id": 39,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Lunch Item 10",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 10.",
+      "price": 279,
+      "isAvailable": true,
+      "rating": 3.1
+    },
+    {
+      "id": 40,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Lunch Item 11",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 11.",
+      "price": 416,
+      "isAvailable": false,
+      "rating": 4.2
+    },
+    {
+      "id": 41,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Lunch Item 12",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 12.",
+      "price": 358,
+      "isAvailable": true,
+      "rating": 3.8
+    },
+    {
+      "id": 42,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Lunch Item 13",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 13.",
+      "price": 505,
+      "isAvailable": true,
+      "rating": 3.3
+    },
+    {
+      "id": 43,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Lunch Item 14",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 14.",
+      "price": 174,
+      "isAvailable": true,
+      "rating": 2.5
+    },
+    {
+      "id": 44,
+      "category": "Lunch",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Lunch Item 15",
+      "descsmall": "Lunch Special",
+      "description": "Delicious lunch option number 15.",
+      "price": 336,
+      "isAvailable": true,
+      "rating": 3.3
+    },
+    {
+      "id": 45,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Dinner Item 1",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 1.",
+      "price": 162,
+      "isAvailable": false,
+      "rating": 3
+    },
+    {
+      "id": 46,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Dinner Item 2",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 2.",
+      "price": 173,
+      "isAvailable": true,
+      "rating": 3
+    },
+    {
+      "id": 47,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Dinner Item 3",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 3.",
+      "price": 205,
+      "isAvailable": true,
+      "rating": 3.7
+    },
+    {
+      "id": 48,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Dinner Item 4",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 4.",
+      "price": 488,
+      "isAvailable": true,
+      "rating": 2.9
+    },
+    {
+      "id": 49,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Dinner Item 5",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 5.",
+      "price": 478,
+      "isAvailable": false,
+      "rating": 4.7
+    },
+    {
+      "id": 50,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Dinner Item 6",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 6.",
+      "price": 135,
+      "isAvailable": false,
+      "rating": 3.8
+    },
+    {
+      "id": 51,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Dinner Item 7",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 7.",
+      "price": 393,
+      "isAvailable": true,
+      "rating": 3
+    },
+    {
+      "id": 52,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Dinner Item 8",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 8.",
+      "price": 120,
+      "isAvailable": true,
+      "rating": 3.8
+    },
+    {
+      "id": 53,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Dinner Item 9",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 9.",
+      "price": 535,
+      "isAvailable": true,
+      "rating": 4.7
+    },
+    {
+      "id": 54,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Dinner Item 10",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 10.",
+      "price": 324,
+      "isAvailable": false,
+      "rating": 4.4
+    },
+    {
+      "id": 55,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Dinner Item 11",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 11.",
+      "price": 330,
+      "isAvailable": true,
+      "rating": 3.8
+    },
+    {
+      "id": 56,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Dinner Item 12",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 12.",
+      "price": 491,
+      "isAvailable": true,
+      "rating": 3
+    },
+    {
+      "id": 57,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Dinner Item 13",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 13.",
+      "price": 369,
+      "isAvailable": false,
+      "rating": 4.2
+    },
+    {
+      "id": 58,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Dinner Item 14",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 14.",
+      "price": 291,
+      "isAvailable": true,
+      "rating": 2.9
+    },
+    {
+      "id": 59,
+      "category": "Dinner",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Dinner Item 15",
+      "descsmall": "Dinner Special",
+      "description": "Delicious dinner option number 15.",
+      "price": 286,
+      "isAvailable": false,
+      "rating": 4.6
+    },
+    {
+      "id": 60,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink.png",
+      "title": "Drinks Item 1",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 1.",
+      "price": 498,
+      "isAvailable": false,
+      "rating": 4.9
+    },
+    {
+      "id": 61,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(1).png",
+      "title": "Drinks Item 2",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 2.",
+      "price": 297,
+      "isAvailable": true,
+      "rating": 3.6
+    },
+    {
+      "id": 62,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(2).png",
+      "title": "Drinks Item 3",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 3.",
+      "price": 545,
+      "isAvailable": true,
+      "rating": 2.5
+    },
+    {
+      "id": 63,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(3).png",
+      "title": "Drinks Item 4",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 4.",
+      "price": 302,
+      "isAvailable": true,
+      "rating": 4.1
+    },
+    {
+      "id": 64,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(4).png",
+      "title": "Drinks Item 5",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 5.",
+      "price": 389,
+      "isAvailable": true,
+      "rating": 2.9
+    },
+    {
+      "id": 65,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink.png",
+      "title": "Drinks Item 6",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 6.",
+      "price": 141,
+      "isAvailable": false,
+      "rating": 3.3
+    },
+    {
+      "id": 66,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(1).png",
+      "title": "Drinks Item 7",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 7.",
+      "price": 339,
+      "isAvailable": true,
+      "rating": 3.5
+    },
+    {
+      "id": 67,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(2).png",
+      "title": "Drinks Item 8",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 8.",
+      "price": 325,
+      "isAvailable": true,
+      "rating": 4.4
+    },
+    {
+      "id": 68,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(3).png",
+      "title": "Drinks Item 9",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 9.",
+      "price": 326,
+      "isAvailable": true,
+      "rating": 2.5
+    },
+    {
+      "id": 69,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(4).png",
+      "title": "Drinks Item 10",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 10.",
+      "price": 411,
+      "isAvailable": false,
+      "rating": 3.7
+    },
+    {
+      "id": 70,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink.png",
+      "title": "Drinks Item 11",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 11.",
+      "price": 503,
+      "isAvailable": true,
+      "rating": 4.4
+    },
+    {
+      "id": 71,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(1).png",
+      "title": "Drinks Item 12",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 12.",
+      "price": 245,
+      "isAvailable": false,
+      "rating": 3.1
+    },
+    {
+      "id": 72,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(2).png",
+      "title": "Drinks Item 13",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 13.",
+      "price": 250,
+      "isAvailable": false,
+      "rating": 3.5
+    },
+    {
+      "id": 73,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(3).png",
+      "title": "Drinks Item 14",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 14.",
+      "price": 591,
+      "isAvailable": false,
+      "rating": 2.5
+    },
+    {
+      "id": 74,
+      "category": "Drinks",
+      "imgurl": "/imgs/drink(4).png",
+      "title": "Drinks Item 15",
+      "descsmall": "Drinks Special",
+      "description": "Delicious drinks option number 15.",
+      "price": 161,
+      "isAvailable": false,
+      "rating": 4.2
+    },
+    {
+      "id": 75,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Others Item 1",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 1.",
+      "price": 115,
+      "isAvailable": true,
+      "rating": 4.7
+    },
+    {
+      "id": 76,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Others Item 2",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 2.",
+      "price": 410,
+      "isAvailable": false,
+      "rating": 2.6
+    },
+    {
+      "id": 77,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Others Item 3",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 3.",
+      "price": 386,
+      "isAvailable": true,
+      "rating": 4.5
+    },
+    {
+      "id": 78,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Others Item 4",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 4.",
+      "price": 511,
+      "isAvailable": true,
+      "rating": 4.1
+    },
+    {
+      "id": 79,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Others Item 5",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 5.",
+      "price": 455,
+      "isAvailable": false,
+      "rating": 3.5
+    },
+    {
+      "id": 80,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Others Item 6",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 6.",
+      "price": 453,
+      "isAvailable": true,
+      "rating": 3.8
+    },
+    {
+      "id": 81,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Others Item 7",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 7.",
+      "price": 329,
+      "isAvailable": true,
+      "rating": 5
+    },
+    {
+      "id": 82,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Others Item 8",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 8.",
+      "price": 435,
+      "isAvailable": false,
+      "rating": 2.8
+    },
+    {
+      "id": 83,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Others Item 9",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 9.",
+      "price": 371,
+      "isAvailable": true,
+      "rating": 2.5
+    },
+    {
+      "id": 84,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Others Item 10",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 10.",
+      "price": 390,
+      "isAvailable": true,
+      "rating": 2.7
+    },
+    {
+      "id": 85,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Others Item 11",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 11.",
+      "price": 393,
+      "isAvailable": true,
+      "rating": 4.1
+    },
+    {
+      "id": 86,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(3).png",
+      "title": "Others Item 12",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 12.",
+      "price": 155,
+      "isAvailable": false,
+      "rating": 4.7
+    },
+    {
+      "id": 87,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(4).png",
+      "title": "Others Item 13",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 13.",
+      "price": 483,
+      "isAvailable": false,
+      "rating": 5
+    },
+    {
+      "id": 88,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(1).png",
+      "title": "Others Item 14",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 14.",
+      "price": 279,
+      "isAvailable": true,
+      "rating": 3.9
+    },
+    {
+      "id": 89,
+      "category": "Others",
+      "imgurl": "/imgs/pngegg(2).png",
+      "title": "Others Item 15",
+      "descsmall": "Others Special",
+      "description": "Delicious others option number 15.",
+      "price": 180,
+      "isAvailable": false,
+      "rating": 4.2
+    }
+  ],
+  "popular": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "chef": [
+    {
+      "id": 2001,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 1",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 1 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2002,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 2",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 2 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2003,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 3",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 3 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2004,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 4",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 4 is an expert in creating delicious meals and specializes in French cuisine."
+    },
+    {
+      "id": 2005,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 5",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 5 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2006,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 6",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 6 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2007,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 7",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 7 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2008,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 8",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 8 is an expert in creating delicious meals and specializes in French cuisine."
+    },
+    {
+      "id": 2009,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 9",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 9 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2010,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 10",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 10 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2011,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 11",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 11 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2012,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 12",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 12 is an expert in creating delicious meals and specializes in French cuisine."
+    },
+    {
+      "id": 2013,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 13",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 13 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2014,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 14",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 14 is an expert in creating delicious meals and specializes in Italian cuisine."
+    },
+    {
+      "id": 2015,
+      "imgurl": "/imgs/chef1.jpg",
+      "name": "Chef 15",
+      "links": [
+        "https://facebook.com",
+        "https://twitter.com",
+        "https://youtube.com",
+        "https://instagram.com"
+      ],
+      "description": "Chef 15 is an expert in creating delicious meals and specializes in Italian cuisine."
+    }
+  ],
+  "blog": [
+    {
+      "id": 1001,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 1",
+      "smalldescrption": "2025-08-01 / By Author 1",
+      "descrption": "This is a detailed description for food blog post 1. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/1"
+    },
+    {
+      "id": 1002,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 2",
+      "smalldescrption": "2025-08-02 / By Author 2",
+      "descrption": "This is a detailed description for food blog post 2. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/2"
+    },
+    {
+      "id": 1003,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 3",
+      "smalldescrption": "2025-08-03 / By Author 3",
+      "descrption": "This is a detailed description for food blog post 3. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/3"
+    },
+    {
+      "id": 1004,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 4",
+      "smalldescrption": "2025-08-04 / By Author 4",
+      "descrption": "This is a detailed description for food blog post 4. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/4"
+    },
+    {
+      "id": 1005,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 5",
+      "smalldescrption": "2025-08-05 / By Author 5",
+      "descrption": "This is a detailed description for food blog post 5. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/5"
+    },
+    {
+      "id": 1006,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 6",
+      "smalldescrption": "2025-08-06 / By Author 6",
+      "descrption": "This is a detailed description for food blog post 6. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/6"
+    },
+    {
+      "id": 1007,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 7",
+      "smalldescrption": "2025-08-07 / By Author 7",
+      "descrption": "This is a detailed description for food blog post 7. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/7"
+    },
+    {
+      "id": 1008,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 8",
+      "smalldescrption": "2025-08-08 / By Author 8",
+      "descrption": "This is a detailed description for food blog post 8. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/8"
+    },
+    {
+      "id": 1009,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 9",
+      "smalldescrption": "2025-08-09 / By Author 9",
+      "descrption": "This is a detailed description for food blog post 9. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/9"
+    },
+    {
+      "id": 1010,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 10",
+      "smalldescrption": "2025-08-10 / By Author 10",
+      "descrption": "This is a detailed description for food blog post 10. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/10"
+    },
+    {
+      "id": 1011,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 11",
+      "smalldescrption": "2025-08-11 / By Author 11",
+      "descrption": "This is a detailed description for food blog post 11. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/11"
+    },
+    {
+      "id": 1012,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 12",
+      "smalldescrption": "2025-08-12 / By Author 12",
+      "descrption": "This is a detailed description for food blog post 12. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/12"
+    },
+    {
+      "id": 1013,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 13",
+      "smalldescrption": "2025-08-13 / By Author 13",
+      "descrption": "This is a detailed description for food blog post 13. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/13"
+    },
+    {
+      "id": 1014,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 14",
+      "smalldescrption": "2025-08-14 / By Author 14",
+      "descrption": "This is a detailed description for food blog post 14. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/14"
+    },
+    {
+      "id": 1015,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 15",
+      "smalldescrption": "2025-08-15 / By Author 15",
+      "descrption": "This is a detailed description for food blog post 15. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/15"
+    },
+    {
+      "id": 1016,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 16",
+      "smalldescrption": "2025-08-16 / By Author 16",
+      "descrption": "This is a detailed description for food blog post 16. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/16"
+    },
+    {
+      "id": 1017,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 17",
+      "smalldescrption": "2025-08-17 / By Author 17",
+      "descrption": "This is a detailed description for food blog post 17. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/17"
+    },
+    {
+      "id": 1018,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 18",
+      "smalldescrption": "2025-08-18 / By Author 18",
+      "descrption": "This is a detailed description for food blog post 18. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/18"
+    },
+    {
+      "id": 1019,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 19",
+      "smalldescrption": "2025-08-19 / By Author 19",
+      "descrption": "This is a detailed description for food blog post 19. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/19"
+    },
+    {
+      "id": 1020,
+      "imgurl": "/imgs/blog img.jpg",
+      "title": "Food Blog Post 20",
+      "smalldescrption": "2025-08-20 / By Author 20",
+      "descrption": "This is a detailed description for food blog post 20. Learn amazing recipes, cooking tips, and more!",
+      "link": "/blogs/20"
+    }
+  ]
 }

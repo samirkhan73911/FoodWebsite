@@ -1,57 +1,58 @@
 // src/app/models/food.models.ts
 
 // 🍽️ Menu Item Interface
-export interface MenuSimpleCard {
+export interface foodCard {
   id: number;
   imgUrl: string;
   title: string;
   category: 'Breakfast' | 'Lunch' | 'Dinner' | 'Other';
   description: string;
+  descsmall: string;
   price: number;
   isAvailable: boolean;
   rating: number; // Rating out of 5
 }
 
-// 📝 Blog Interface
-export interface Blogcard{
-  id: number;
-  title: string;
-  author: string;
-  date: string;  // ISO or yyyy-mm-dd format
-  imgUrl: string;
-  content: string;
-}
+// // 📝 Blog Interface
+// export interface Blogcard{
+//   id: number;
+//   title: string;
+//   author: string;
+//   date: string;  // ISO or yyyy-mm-dd format
+//   imgUrl: string;
+//   content: string;
+// }
 
-// 👨‍🍳 Chef Interface
-export interface Chefcard {
-  id: number;
-  name: string;
-  specialty: string;
-  experience: string; // e.g., "5 years"
-  imgUrl: string;
-  bio: string;
-}
+// // 👨‍🍳 Chef Interface
+// export interface Chefcard {
+//   id: number;
+//   name: string;
+//   specialty: string;
+//   experience: string; // e.g., "5 years"
+//   imgUrl: string;
+//   bio: string;
+// }
 
 // 🌐 Root Dataset (if loading full JSON file at once)
 export interface FoodWebsiteData {
-  menu: MenuSimpleCard[];
+  menu: foodCard[];
   blogs: Blogcard[];
   chefs: Chefcard[];
 }
 
 
 // Shared structure for Menu & Simple cards
-export interface MenuSimpleCard {
-  id: number;
-  imgurl: string;
-  title: string;
-  descsmall: string;
-  description: string;
-  price: number;
-}
+// export interface MenuSimpleCard {
+//   id: number;
+//   imgurl: string;
+//   title: string;
+//   descsmall: string;
+//   description: string;
+//   price: number;
+// }
 
 // Chef Card
-export interface ChefCard {
+export interface Chefcard {
   id: number;
   imgurl: string;
   name: string;
@@ -60,7 +61,7 @@ export interface ChefCard {
 }
 
 // Blog Card
-export interface BlogCard {
+export interface Blogcard {
   id: number;
   imgurl: string;
   title: string;
@@ -70,9 +71,9 @@ export interface BlogCard {
 }
 
 // Generic API response
-export interface CardApiResponse {
+// export interface CardApiResponse {
 
-  carddata?: MenuSimpleCard;
-  chefdata?: ChefCard;
-  blogdata?: BlogCard;
-}
+//   carddata?: MenuSimpleCard;
+//   chefdata?: Chefcard;
+//   blogdata?: Blogcard;
+// }

@@ -118,17 +118,15 @@
                     doloremque sapiente suscipit ipsam velit exercitationem um a nostrum fuga temporibus, sit,
                     corrupti dolore ut assumenda vero?</p>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 my-3">
-                <app-card [cardType]="'chef'" [cardType]="'chef'"   [chefdata]="{
-                   id:1, imgurl: '/imgs/chef1.jpg', 
-                    name: 'Chef John Doe', 
-                    links: ['n', 'n','n','n'], 
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, delectus? Optio eveniet libero rerum nobis vitae, '
-                  }"/>
-          
-         
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 my-3">
+
+                 @for (card of chefdata; track $index) {
+                        <div class="col-12 col-sm-6 col-lg-3 my-3">
+                    <app-card [cardType]="'chef'" [carddata]="card" />
+
+                </div>
+                        }
+
+            <!-- <div class="col-12 col-sm-6 col-lg-3 my-3">
                 <app-card  [cardType]="'chef'"  [chefdata]="{
                    id:1, imgurl: '/imgs/chef1.jpg', 
                     name: 'Chef John Doe', 
@@ -159,7 +157,7 @@
                   }"/>
           
          
-            </div>
+            </div> -->
             
         </div>
     </div>
