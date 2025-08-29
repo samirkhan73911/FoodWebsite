@@ -19,77 +19,30 @@
 
                     <div class="col-12 ">
                         <div class="row pb-5">
-                            @for (card of blogdata; track $index) {
+                            @for (card of blogdata | paginate: { itemsPerPage: itemsPerPage, currentPage: page }; track
+                            $index) {
                             <div class="col-12 col-sm-4 my-3 pt-2">
                                 <app-card [cardType]="'blog'" [carddata]="card" />
 
                             </div>
                             }
 
-                            <!-- <div class="col-12 col-sm-4 my-3 pt-2">
-                                <app-card [cardType]="'blog'" [blogdata]="{ id:1,imgurl: '/imgs/blog img.jpg',
-                                                             title: 'Blog Title Here',
-                                                             smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
-                                                             descrption: 'Lorem ipsum dolor sit amet, consectetur
-                                                                 adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
-                                                                 Nullam ultricies eu turpis at accumsan...',
-                                                             link: ''}" />
-                            </div>
 
-                            <div class="col-12 col-sm-4 my-3 pt-2">
-                                <app-card [cardType]="'blog'" [blogdata]="{ id:1,imgurl: '/imgs/blog img.jpg',
-                                                             title: 'Blog Title Here',
-                                                             smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
-                                                             descrption: 'Lorem ipsum dolor sit amet, consectetur
-                                                                 adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
-                                                                 Nullam ultricies eu turpis at accumsan...',
-                                                             link: ''}" />
-                            </div>
 
-                            <div class="col-12 col-sm-4 my-3 pt-2">
-                                <app-card [cardType]="'blog'" [blogdata]="{ id:1,imgurl: '/imgs/blog img.jpg',
-                                                             title: 'Blog Title Here',
-                                                             smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
-                                                             descrption: 'Lorem ipsum dolor sit amet, consectetur
-                                                                 adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
-                                                                 Nullam ultricies eu turpis at accumsan...',
-                                                             link: ''}" />
-                            </div>
+                        </div>
 
-                            <div class="col-12 col-sm-4 my-3 pt-2">
-                                <app-card [cardType]="'blog'" [blogdata]="{ id:1,imgurl: '/imgs/blog img.jpg',
-                                                             title: 'Blog Title Here',
-                                                             smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
-                                                             descrption: 'Lorem ipsum dolor sit amet, consectetur
-                                                                 adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
-                                                                 Nullam ultricies eu turpis at accumsan...',
-                                                             link: ''}" />
-                            </div>
 
-                            <div class="col-12 col-sm-4 my-3 pt-2">
-                                <app-card [cardType]="'blog'" [blogdata]="{ id:1,imgurl: '/imgs/blog img.jpg',
-                                                             title: 'Blog Title Here',
-                                                             smalldescrption: 'May 15, 2017 / By admin / 3 Comments',
-                                                             descrption: 'Lorem ipsum dolor sit amet, consectetur
-                                                                 adipiscing elit. Nullam efficitur placerat nulla, in suscipit erat sodales id.
-                                                                 Nullam ultricies eu turpis at accumsan...',
-                                                             link: ''}" />
-                            </div> -->
+
+                        <div class="col-12  py-3 text-center d-flex justify-content-center">
+                            <pagination-controls (pageChange)="page = $event" previousLabel="" nextLabel="">>
+
+                            </pagination-controls>
+
                         </div>
                     </div>
 
 
-
-                    <div class="col-12  py-3 text-center d-flex justify-content-center">
-                        <pagination [totalItems]="77" [maxSize]="5" previousText="&lsaquo;" nextText="&rsaquo;"
-                            firstText="&laquo;" lastText="&raquo;">
-
-                        </pagination>
-
-                    </div>
                 </div>
-
-
             </div>
         </div>
     </div>

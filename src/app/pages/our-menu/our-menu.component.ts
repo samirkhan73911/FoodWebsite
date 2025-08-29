@@ -35,6 +35,7 @@ export class OurMenuComponent {
   Otherdata: foodCard[] = [];
 
   ngOnInit() {
+    window.scrollTo(0, 0); 
     this.getmenus();
   }
   ngAfterViewInit() {

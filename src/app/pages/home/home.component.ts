@@ -30,21 +30,22 @@ export class HomeComponent {
     this.getmenus();
     this.getpopular();
     this.getblogs();
+  
   }
-  ngAfterViewInit() {
-    this.getelementbycategory(this.selected);
-  }
+
 
   getmenus() {
     this.cardsrv.getMenus().subscribe((res: any) => {
       this.menudata = res;
+       this.getelementbycategory(this.selected);
     });
   }
   getpopular() {
-    this.cardsrv.getpopular().subscribe((ids) => {
+    this.cardsrv.getpopular().subscribe((res) => {
      
-      this.populardata = this.menudata.filter(item => ids.includes(item.id));
-      
+        const ids = res.map(p => p.id);
+      this.populardata = this.menudata.filter(item => ids.includes(item.id)).slice(0, 8);
+
     });
   }
 
@@ -60,6 +61,7 @@ export class HomeComponent {
       // .filter((item) => item.category === category && item.isAvailable === true)
       .filter((item) => item.category === category )
       .slice(0, 8);
+   
   }
   // elementmenupage() {
   //   this.filterdata.slice(0, 8);

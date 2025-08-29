@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Blogcard, Chefcard, foodCard } from '../models/interface/Idata';
+import { Blogcard, Chefcard, foodCard, Popular } from '../models/interface/Idata';
 import { API_URL } from '../constant/apiurl';
 
 @Injectable({
@@ -17,9 +17,14 @@ export class CardServiceService {
   //  getMenusperpag(limit: number = 8): Observable<foodCard[]> {
   //  return this.http.get<foodCard[]>(`http://localhost:3000/menu?_limit=${limit}`);
   // }
-   getpopular(): Observable<number[]> {
-    return this.http.get<number[]>(`${API_URL.baseUrl}${API_URL.endpoints.popular}`);
+   getpopular(): Observable<Popular[]> {
+ 
+    return this.http.get<Popular[]>(`${API_URL.baseUrl}${API_URL.endpoints.popular}`);
   }
+  //  getpopular(): Observable<number[]> {
+  //   debugger
+  //   return this.http.get<number[]>(`${API_URL.baseUrl}${API_URL.endpoints.popular}`);
+  // }
 
   getChefs(): Observable<Chefcard[]> {
     return this.http.get<Chefcard[]>(`${API_URL.baseUrl}${API_URL.endpoints.chefs}`);

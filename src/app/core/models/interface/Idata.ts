@@ -70,6 +70,9 @@ export interface Blogcard {
   link: string;
 }
 
+export interface Popular {
+  id: number;
+}
 // Generic API response
 // export interface CardApiResponse {
 

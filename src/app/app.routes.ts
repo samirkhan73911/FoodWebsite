@@ -16,6 +16,7 @@ import { ProductdetailsComponent } from './pages/productdetails/productdetails.c
 
 
 export const routes: Routes = [
+    
     {
         path:"",
         redirectTo:"home",
