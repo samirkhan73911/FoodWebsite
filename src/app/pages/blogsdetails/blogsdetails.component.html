@@ -1,0 +1,112 @@
+<app-title [title]="'Blog Details'" [link]="'/home'" [page1]="'Home'" [page2]="'Blog Details'" />
+<section>
+
+<div class="container my-5 py-3 mx-auto d-flex flex-column ">
+
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10 col-12">
+            <div class=" blog-img w-75">
+                <img [src]="Blog?.imgurl" alt="Food Image" class="img-fluid" />
+            </div>
+
+        </div>
+    </div>
+
+
+    <h2 class="post-title ">{{Blog?.title}}</h2>
+    <div class="post-meta">{{Blog?.smalldescrption}}</div>
+    <div class="post-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec imperdiet sed, pulvinar
+            et urna. Fusce hendrerit faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nunc ornare, fermentum nec imperdiet sed, pulvinar et urna. Fusce hendrerit
+            faucibus sollicitudin. Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            ornare, fermentum nec imperdiet sed, pulvinar et urna.</p>
+
+        <p>Nunc ornare, fermentum nec imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin. Duis eu
+            tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec
+            imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin.</p>
+
+        <div class="highlight-box">
+            <strong>Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus
+                sollicitudin.</strong> Duis eu tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nunc orci tellus, fermentum nec imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin.
+        </div>
+
+        <p>Nunc ornare, fermentum nec imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin. Duis eu
+            tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec
+            imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin.</p>
+
+        <p>Nunc ornare, fermentum nec imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin. Duis eu
+            tristique elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec
+            imperdiet sed, pulvinar et urna. Fusce hendrerit faucibus sollicitudin.</p>
+    </div>
+
+    <div class="post-footer">
+        <div class="tags">
+            <strong>Tags:</strong> <span>LifeStyle</span><span>Dinner</span><span>Yummy</span>
+        </div>
+        <div class="share-icons">
+            <strong>Share:</strong>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" title="Facebook" />
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" title="Twitter" />
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Pinterest" title="Pinterest" />
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Google Plus" title="Google Plus" />
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="LinkedIn" title="LinkedIn" />
+        </div>
+    </div>
+    </div>
+
+</section>
+    <!-- Comments Section -->
+    <section class="comments-section">
+        <h3 class="comments-title">COMMENTS (03)</h3>
+
+        <div class="comment">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User avatar" />
+            <div class="comment-content">
+                <div class="comment-author">John Doe <span class="reply-link">Reply</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec imperdiet sed,
+                    pulvinar et urna.</p>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/45.jpg" alt="User avatar" />
+            <div class="comment-content">
+                <div class="comment-author">John Doe <span class="reply-link">Reply</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec imperdiet sed,
+                    pulvinar et urna.</p>
+            </div>
+        </div>
+
+        <div class="comment">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/56.jpg" alt="User avatar" />
+            <div class="comment-content">
+                <div class="comment-author">John Doe <span class="reply-link">Reply</span></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare, fermentum nec imperdiet sed,
+                    pulvinar et urna.</p>
+            </div>
+        </div>
+
+        <!-- Post Comment Form -->
+        <div class="comment-form">
+            <h3>POST A COMMENT</h3>
+            <form>
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="comment">Write a comment</label>
+                <textarea id="comment" name="comment" required></textarea>
+
+                <button type="submit">POST COMMENT</button>
+            </form>
+        </div>
+    </section>
+
+
+
+<app-testimonal />
+<app-newsletter />

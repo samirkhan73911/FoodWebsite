@@ -30,10 +30,13 @@ export class OurBlogsComponent {
     this.getblogs();
   }
   getblogs() {
-    this.cardsrv.getBlogs().subscribe((res: any) => {
-      this.blogdata = res;
-      // this.totalitems = this.blogdata.length;
-      // this.blogdata = this.blogdata.slice(0, 6);
+    this.cardsrv.getBlogs().subscribe( {
+        next: (res) => {
+        this.blogdata = res;
+      },
+      error: (err) => {
+        console.error("Error fetching blogs:", err);
+      }
     });
   }
 }

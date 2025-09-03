@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { EncryptionService } from '../../core/services/encryption.service';
 
 @Component({
   selector: 'app-card',
@@ -10,81 +12,27 @@ import { Component, inject, Input } from '@angular/core';
 })
 export class CardComponent {
 
+ router=inject(Router);
+ ensrv=inject(EncryptionService);
   @Input() cardType: 'menu' | 'popular' | 'chef' | 'blog' = 'menu';
   @Input() carddata: any = {};
+
   
-  // chefdata: any = {};
-  // blogdata: any = {};
-
-  // @Input() carddata: {
-  //   id: number;
-  //   imgurl: string;
-  //   title: string;
-  //   descsmall: string;
-  //   description: string;
-  //   price: number;
-  // } = {
-  //   id: 0,
-  //   imgurl: '',
-  //   title: '',
-  //   descsmall: '',
-  //   description: '',
-  //   price: 0,
-  // };
-
-  // @Input() chefdata: {
-  //   id: number;
-  //   imgurl: string;
-  //   name: string;
-  //   links: string[];
-  //   description: string;
-  // } = {
-  //   id: 0,
-  //   imgurl: '',
-  //   name: '',
-  //   links: [],
-  //   description: '',
-  // };
-
-  // @Input() blogdata: {
-  //   id: number;
-  //   imgurl: string;
-  //   title: string;
-  //   smalldescrption: string;
-  //   descrption: string;
-  //   link: string;
-  // } = {
-  //   id: 0,
-  //   imgurl: '',
-  //   title: '',
-  //   smalldescrption: '',
-  //   descrption: '',
-  //   link: '',
-  // };
+itemdetailspage(id:number) {
+  // this.router.navigate(['/productdetailspage',id]);
+     const encid=this.goToDetails(id)
+   this.router.navigate(['/productdetailspage', encid]);
 }
-// getFoodCards(type: 'menu' | 'popular') {
-//   this.cardsrv.getCardsByType(type).subscribe(data => {
-//     if (type === 'menu') {
-//       this.menudata = data;
-//     } else {
-//       this.populardata = data;
-//     }
-//     this.cardType = type; // sets the current card type
-//   });
-// }
+blogdetailspage(id:number) {
+  // this.router.navigate(['/blogsdetailspage',id]);
+   const encid=this.goToDetails(id)
+   this.router.navigate(['/blogsdetailspage', encid]);
+}
 
-// // chefs (different structure)
-// getChefs() {
-//   this.cardsrv.getCardsByType('chef').subscribe(data => {
-//     this.chefdata = data;
-//     this.cardType = 'chef';
-//   });
-// }
+    goToDetails(id: number) {
+  const encryptedId = encodeURIComponent(this.ensrv.encrypt(id.toString()));
+  return encryptedId
+  // this.router.navigate(['/blogsdetailspage', encryptedId]);
+}
 
-// // blogs (different structure)
-// getBlogs() {
-//   this.cardsrv.getCardsByType('blog').subscribe(data => {
-//     this.blogdata = data;
-//     this.cardType = 'blog';
-//   });
-// }
+}

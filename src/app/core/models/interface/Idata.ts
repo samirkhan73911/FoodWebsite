@@ -3,7 +3,7 @@
 // 🍽️ Menu Item Interface
 export interface foodCard {
   id: number;
-  imgUrl: string;
+  imgurl: string;
   title: string;
   category: 'Breakfast' | 'Lunch' | 'Dinner' | 'Other';
   description: string;

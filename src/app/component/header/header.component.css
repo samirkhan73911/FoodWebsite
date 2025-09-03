@@ -39,6 +39,7 @@
     margin: 0px 10px 5px 0px;
   }
   .dropdownbtn {
+    appearance: base-select;
     margin: 0px;
     color: white !important;
     border: none;
@@ -51,11 +52,26 @@
     }
   }
 
+    .dropdown.show>.dropdownbtn{
+       color: var(--main-theme-color) !important;
+      background-color: transparent;
+    }
+
   .dropdown-item{
+     background-color:transparent;
+          color: rgb(54, 54, 54) !important;
     &:hover,&:active {
       color: var(--main-theme-color) !important;
+       /* background-color: rgb(239, 237, 237); */
       
     }
+  }
+  .dropdown-item.active{
+    /* &:hover,&:active { */
+      color: var(--main-theme-color) !important;
+       /* background-color: rgb(239, 237, 237); */
+      
+    /* } */
   }
 
 

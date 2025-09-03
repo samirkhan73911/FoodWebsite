@@ -12,6 +12,8 @@ import { ReservationComponent } from './pages/reservation/reservation.component'
 import { Page404Component } from './pages/page404/page404.component';
 import { ThankYoupageComponent } from './pages/thank-youpage/thank-youpage.component';
 import { ProductdetailsComponent } from './pages/productdetails/productdetails.component';
+import { BlogsdetailsComponent } from './pages/blogsdetails/blogsdetails.component';
+import { LoaderComponent } from './component/loader/loader.component';
 
 
 
@@ -71,8 +73,13 @@ export const routes: Routes = [
         component:ThankYoupageComponent
     },
     {
-        path:"productdetailspage",
+        path:"productdetailspage/:id",
         component:ProductdetailsComponent
     },
+    {
+        path:"blogsdetailspage/:id",
+        component:BlogsdetailsComponent
+    },
+   
    
 ];

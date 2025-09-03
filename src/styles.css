@@ -49,6 +49,25 @@ body {
     color: #ffffff5e !important;
   }
 }
+
+
+.textarea {
+  background: rgba(245, 245, 245, 0.5);
+  text-transform: uppercase;
+  height: 180px;
+  color: #1d1d1d99 !important;
+  padding: 0 0 0 12px !important;
+  border-radius: 5px;
+  resize: none;
+ margin: 5px 15px !important;
+  &:focus {
+    border: 1px solid var(--main-theme-color) !important;
+    background: rgba(245, 245, 245, 0.5);
+    box-shadow: none !important;
+  }
+}
+
+
 .bginput {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -144,6 +163,7 @@ body {
     border: 1px solid var(--main-theme-color);
   }
 }
+
 
 
 

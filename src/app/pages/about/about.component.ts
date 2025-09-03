@@ -22,9 +22,14 @@ export class AboutComponent {
   }
 
   getchefs() {
-    this.cardsrv.getChefs().subscribe((res: any) => {
+    this.cardsrv.getChefs().subscribe({
+      next: (res) => {
       this.chefdata = res;
       this.chefdata = this.chefdata.slice(0, 4);
+      },
+      error: (err) => {
+        console.error("Error fetching chefs:", err);
+      }
     });
   }
 }

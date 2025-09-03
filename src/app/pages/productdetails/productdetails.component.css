@@ -1,3 +1,10 @@
+::ng-deep .bs-rating-star {
+  font-size: 1.3rem;
+  color: var(--main-theme-color);
+}
+.textarea,.input{
+  background-color: white !important;
+}
 .product-details-page {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
