@@ -17,6 +17,13 @@ export class CardServiceService {
   //  getMenusperpag(limit: number = 8): Observable<foodCard[]> {
   //  return this.http.get<foodCard[]>(`http://localhost:3000/menu?_limit=${limit}`);
   // }
+
+  getProductById(id: number): Observable<foodCard > {
+    return this.http.get<foodCard>(`${API_URL.baseUrl}${API_URL.endpoints.menu}/${id}`);
+  }
+  getBlogById(id: number): Observable<Blogcard> {
+    return this.http.get<Blogcard>(`${API_URL.baseUrl}${API_URL.endpoints.blogs}/${id}`);
+  }
    getpopular(): Observable<Popular[]> {
  
     return this.http.get<Popular[]>(`${API_URL.baseUrl}${API_URL.endpoints.popular}`);
