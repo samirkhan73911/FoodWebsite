@@ -15,7 +15,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: #fff;
-  background: #e74c3c;
+  background: var(--main-theme-color);
   padding: 12px 0;
   text-align: center;
   border-radius: 4px;
@@ -55,7 +55,7 @@
   font-size: 1.2rem;
 }
 .product-price {
-  color: #e74c3c;
+  color: var(--main-theme-color);
   font-size: 1.3rem;
   font-weight: 600;
 }
@@ -79,13 +79,13 @@
   height: 32px;
   border: none;
   background: #f8f8f8;
-  color: #e74c3c;
+  color: var(--main-theme-color);
   font-size: 1.2rem;
   cursor: pointer;
   transition: background 0.2s;
 }
 .qty-btn:hover {
-  background: #e74c3c;
+  background: var(--main-theme-color);
   color: #fff;
 }
 .qty-value {
@@ -98,16 +98,16 @@
   border-right: 1px solid #eee;
 }
 .product-tabs .nav-tabs .nav-link {
-  color: #e74c3c;
+  color: var(--main-theme-color);
   font-weight: 600;
   border: none;
   border-bottom: 2px solid transparent;
 }
 .product-tabs .nav-tabs .nav-link.active {
   color: #fff;
-  background: #e74c3c;
+  background: var(--main-theme-color);
   border-radius: 0;
-  border-bottom: 2px solid #e74c3c;
+  border-bottom: 2px solid var(--main-theme-color);
 }
 .product-tabs .tab-content {
   border: 1px solid #eee;

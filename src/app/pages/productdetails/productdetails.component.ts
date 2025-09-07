@@ -1,10 +1,11 @@
+import { CartService } from './../../core/services/cart.service';
 import { encryption } from '../../core/constant/encryption';
 import { CardServiceService } from './../../core/services/card-service.service';
 import { Component } from '@angular/core';
 import { TitleComponent } from '../../Reuseable component/title/title.component';
 import { NewsletterComponent } from '../../component/newsletter/newsletter.component';
 import { ActivatedRoute, Router } from '@angular/router';
-import { foodCard } from '../../core/models/interface/Idata';
+import { CartItem, foodCard } from '../../core/models/interface/Idata';
 
 import { RatingModule } from 'ngx-bootstrap/rating';
 
@@ -28,7 +29,8 @@ export class ProductdetailsComponent {
     private route: ActivatedRoute,
     private cardsrv: CardServiceService,
     private router: Router,
-    private encSrv: EncryptionService
+    private encSrv: EncryptionService,
+    public CartServ: CartService
   ) {}
 
   ngOnInit(): void {
@@ -66,4 +68,10 @@ export class ProductdetailsComponent {
       },
     });
   }
+
+addToCart() {
+  if (this.product) {
+    this.CartServ.addItem({ ...this.product,total:this.product.price, quantity: 1 });
+  }
+}
 }

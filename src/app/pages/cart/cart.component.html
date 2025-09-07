@@ -38,7 +38,7 @@
 
             <div id="tab-cart" class="tab-pane active">
                 <div class="cart-container border">
-                    <h4 class="cart-header">You have <span class="cart-items-count">2 items</span> in your order.</h4>
+                    <h4 class="cart-header">You have <span class="cart-items-count">{{cartService.count()}}</span> @if(cartService.count()<=1){ item} @else{ items} in your order.</h4>
                     <table class="  table align-middle border">
                         <thead class="bg-dark-subtle">
                             <tr class=" ">
@@ -52,22 +52,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="text-center">
+                          
+                            
+                            <tr class="text-center" *ngFor="let item of cartService.cartItems()">
 
                                 <td class="">
 
 
                                     <a class="float-lg-start" href="">
 
-                                        <img src="/imgs/pngegg(1).png" alt="Food" class="cart-img">
+                                        <img [src]="item.imgurl" alt="Food" class="cart-img">
                                     </a>
                                     <div class="cart-item-name">
 
 
-                                        <h4 class="cart-title">Food Title Here</h4>
-                                        <p class="cart-desc m-0">Cursus / Dictum / Risus</p>
+                                        <h4 class="cart-title">{{item.title}}</h4>
+                                        <p class="cart-desc m-0">{{item.descsmall}}</p>
                                         <div class="cart-stars">
-                                            <rating [(ngModel)]="rate" [max]="max" (keyup)="confirmSelection($event)">
+                                            <rating [(ngModel)]="item.rating" [max]="max" [readonly]="true" (keyup)="confirmSelection($event)">
                                             </rating>
 
                                         </div>
@@ -75,27 +77,27 @@
 
                                 </td>
                                 <td class="cart-col-price">
-                                    $23.00
+                                   {{item.price}}
                                 </td>
                                 <td class="">
                                     <div class="cart-qty-controls">
-                                        <button class="qty-btn qty-btn-minus-raduis"><span>&minus;</span></button>
-                                        <input class="qty-value" placeholder="qty" type="number" value="1" size="1">
-                                        <button class="qty-btn qty-btn-plus-raduis"><span>&plus;</span></button>
+                                        <button class="qty-btn qty-btn-minus-raduis" (click)="cartService.updateQuantity(item.id,-1)"><span>&minus;</span></button>
+                                        <input [(ngModel)]="item.quantity" class="qty-value" placeholder="qty" type="number" value="1" size="1">
+                                        <button class="qty-btn qty-btn-plus-raduis" (click)="cartService.updateQuantity(item.id,1)"><span>&plus;</span></button>
                                     </div>
                                 </td>
                                 <td class="cart-col-total">
-                                    $23.00
+                                   {{item.total}}
                                 </td>
                                 <td class="">
-                                    <button class="remove-btn">&times;</button>
+                                    <button class="remove-btn" (click)="cartService.removeItem(item.id)">&times;</button>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td class="px-4 pb-4 bg-dark-subtle" colspan="5">
-                                    <h3 class="cart-total text-end my-3">SUBTOTAL - $46.50 </h3>
-                                    <button class="cart-btn  float-start">CONTINUE SHOPPING</button>
+                                    <h3 class="cart-total text-end my-3">SUBTOTAL - {{cartService.total()}}</h3>
+                                    <button class="cart-btn  float-start" >CONTINUE SHOPPING</button>
                                     <button class="cart-btn float-end" data-bs-toggle="tab" data-bs-target="#tab-info"
                                         type="button" role="tab" aria-controls="tab-info"
                                         aria-selected="false">CHECKOUT</button>
@@ -141,7 +143,9 @@
                         </div>
                         <div class="col-12">
 
-                            <button class="cart-btn  float-start"> SHOPPING CART</button>
+                            <button class="cart-btn  float-start"  data-bs-toggle="tab" data-bs-target="#tab-cart"
+                                type="button" role="tab" aria-controls="tab-cart"
+                                aria-selected="false" > SHOPPING CART</button>
                             <button class="cart-btn  float-end" data-bs-toggle="tab" data-bs-target="#tab-payment"
                                 type="button" role="tab" aria-controls="tab-payment"
                                 aria-selected="false">CONTINUE</button>

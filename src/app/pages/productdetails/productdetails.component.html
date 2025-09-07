@@ -2,51 +2,6 @@
 
 <div class="product-details-page container my-5">
   <div class="row ">
-    <!-- Sidebar Filters -->
-    <!-- <aside class="col-lg-3 mb-4">
-      <div class="sidebar-filters p-4 bg-white rounded shadow-sm">
-        <h5 class="sidebar-title mb-3">SEARCH FILTERS</h5>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Search Food">
-        </div>
-        <div class="mb-3">
-          <div class="fw-bold mb-2">Categories</div>
-          <div><input type="radio" name="cat"> Sandwiches</div>
-          <div><input type="radio" name="cat"> Fast Food</div>
-          <div><input type="radio" name="cat"> Vegetarian</div>
-          <div><input type="radio" name="cat"> Thai</div>
-          <div><input type="radio" name="cat"> Non Veg</div>
-          <div><input type="radio" name="cat"> Salads</div>
-        </div>
-        <div class="mb-3">
-          <div class="fw-bold mb-2">FOOD FOR</div>
-          <div><input type="radio" name="foodfor"> Delivery</div>
-          <div><input type="radio" name="foodfor"> Pickup</div>
-        </div>
-        <div class="mb-3">
-          <div class="fw-bold mb-2">POPULAR TAGS</div>
-          <div class="tags">
-            <span class="tag">Service ×</span>
-            <span class="tag">Cookies ×</span>
-            <span class="tag">Pizza ×</span>
-            <span class="tag">Tandoori Chicken ×</span>
-            <span class="tag">Cupcake ×</span>
-            <span class="tag">Burger ×</span>
-          </div>
-        </div>
-        <div>
-          <div class="fw-bold mb-2">RATING</div>
-          <div class="rating-filter">
-            <div>★★★★★</div>
-            <div>★★★★☆</div>
-            <div>★★★☆☆</div>
-            <div>★★☆☆☆</div>
-            <div>★☆☆☆☆</div>
-          </div>
-        </div>
-      </div>
-    </aside> -->
-    <!-- Product Details -->
     <main class="col-12">
       <div class="row">
         <div class="col-md-5 text-center">
@@ -67,12 +22,14 @@
           </div>
           <div class="d-flex align-items-center mb-3">
             <div class="qty-controls me-3">
-              <button class="qty-btn">-</button>
-              <span class="qty-value">1</span>
-              <button class="qty-btn">+</button>
+              <button class="qty-btn" (click)="product && CartServ.updateQuantity(product.id,-1)">-</button>
+              <span class="qty-value">
+                <!-- {{ CartServ.cartItems().find(i => i.id ===  product?.id)?.quantity || 1 }} -->
+              </span>
+              <button class="qty-btn" (click)="product && CartServ.updateQuantity(product.id,1)">+</button>
             </div>
             <button class="btn btn-outline-danger me-2">ORDER NOW</button>
-            <button class="btn btn-outline-danger">ADD TO CART</button>
+            <button class="btn btn-outline-danger" (click)="addToCart()">ADD TO CART</button>
           </div>
         </div>
       </div>
@@ -122,12 +79,13 @@
                 <div class="col-sm-12">
                   <div class="rating">
                     <p>Your Rating*</p>
-                    <rating [max]="max" [(ngModel)]="rate" [readonly]="false" (keyup)="confirmSelection($event)" name="123"></rating>
+                    <rating [max]="max" [(ngModel)]="rate" [readonly]="false" (keyup)="confirmSelection($event)"
+                      name="123"></rating>
                   </div>
                 </div>
               </div>
               <div class="buttons clearfix">
-                <button type="submit" id="button-review" class="btn btn-theme btn-wide">Submit</button>
+                <button type="submit" id="button-review" class="btn btn-theme btn-wide  bgclrprimary">Submit</button>
               </div>
             </form>
           </div>
