@@ -4,18 +4,17 @@ import { CardServiceService } from './../../core/services/card-service.service';
 import { Component } from '@angular/core';
 import { TitleComponent } from '../../Reuseable component/title/title.component';
 import { NewsletterComponent } from '../../component/newsletter/newsletter.component';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { CartItem, foodCard } from '../../core/models/interface/Idata';
-
 import { RatingModule } from 'ngx-bootstrap/rating';
-
 import { FormsModule } from '@angular/forms';
 import { EncryptionService } from '../../core/services/encryption.service';
+import { ModalComponent } from "../../modal/modal.component";
 
 @Component({
   selector: 'app-productdetails',
   standalone: true,
-  imports: [TitleComponent, NewsletterComponent, RatingModule, FormsModule],
+  imports: [TitleComponent, NewsletterComponent, RatingModule, FormsModule, ModalComponent, RouterLink],
   templateUrl: './productdetails.component.html',
   styleUrl: './productdetails.component.css',
 })
@@ -25,6 +24,7 @@ export class ProductdetailsComponent {
 
   productId!: number;
   product: foodCard | null = null;
+  productQuantity: number = 1;
   constructor(
     private route: ActivatedRoute,
     private cardsrv: CardServiceService,
@@ -69,9 +69,27 @@ export class ProductdetailsComponent {
     });
   }
 
-addToCart() {
-  if (this.product) {
-    this.CartServ.addItem({ ...this.product,total:this.product.price, quantity: 1 });
+ increaseQuantity() {
+    this.productQuantity++;
+ 
   }
-}
+
+  decreaseQuantity() {
+    if (this.productQuantity > 1) {
+      this.productQuantity--;
+      
+    }
+  }
+
+  addToCart() {
+    if (this.product) {
+      this.CartServ.addItem({
+        ...this.product,
+        total: this.product.price * this.productQuantity,
+        quantity: this.productQuantity,
+      });
+    }
+  }
+
+
 }

@@ -22,14 +22,26 @@
           </div>
           <div class="d-flex align-items-center mb-3">
             <div class="qty-controls me-3">
-              <button class="qty-btn" (click)="product && CartServ.updateQuantity(product.id,-1)">-</button>
-              <span class="qty-value">
-                <!-- {{ CartServ.cartItems().find(i => i.id ===  product?.id)?.quantity || 1 }} -->
-              </span>
-              <button class="qty-btn" (click)="product && CartServ.updateQuantity(product.id,1)">+</button>
+              <button class="qty-btn" (click)="decreaseQuantity ()">-</button>
+              <span class="qty-value">{{productQuantity}}</span>
+              <button class="qty-btn" (click)="increaseQuantity()">+</button>
             </div>
-            <button class="btn btn-outline-danger me-2">ORDER NOW</button>
+            <button class="btn btn-outline-danger me-2" routerLink="/cart">ORDER NOW</button>
             <button class="btn btn-outline-danger" (click)="addToCart()">ADD TO CART</button>
+            @if(CartServ.showmodal()) {
+            <app-modal>
+              <p class="text-center text-danger fw-bold">
+                This product is already in your cart!
+              </p>
+            </app-modal>
+            }
+            @else if (CartServ.itemadded()) {
+            <app-modal>
+              <p class="text-center text-success fw-bold">
+                Product added to cart successfully!
+              </p>
+              </app-modal>
+            }
           </div>
         </div>
       </div>

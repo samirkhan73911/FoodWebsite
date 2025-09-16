@@ -6,6 +6,8 @@ import { CartItem, foodCard } from '../models/interface/Idata';
 })
 export class CartService {
 
+  showmodal=signal<boolean>(false);
+  itemadded=signal<boolean>(false);
  cartItems = signal<CartItem[]>([]);
   // computed signal for total
   total = computed(() =>
@@ -22,9 +24,11 @@ export class CartService {
     const existing = items.find(i => i.id === item.id);
 
     if (existing) {
-      existing.quantity += item.quantity;
+      this.showmodal.set(true);
+
     } else {
       items.push(item);
+      this.itemadded.set(true);
     }
 
     this.cartItems.set(items);
@@ -49,5 +53,6 @@ export class CartService {
     }
 
     this.cartItems.set(items);
+    this.showmodal.set(false);
   }
 }

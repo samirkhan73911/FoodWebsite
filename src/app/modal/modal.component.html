@@ -1,0 +1,11 @@
+<div #Modal class="modal fade show d-block " tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="btn-close ms-auto" (click)="closeModal()"></button>
+            <div class="modal-body">
+                <ng-content></ng-content>
+            </div>
+
+        </div>
+    </div>
+</div>
