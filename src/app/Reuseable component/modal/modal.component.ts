@@ -1,5 +1,5 @@
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
-import { CartService } from '../core/services/cart.service';
+import { CartService } from '../../core/services/cart.service';
 
 @Component({
   selector: 'app-modal',

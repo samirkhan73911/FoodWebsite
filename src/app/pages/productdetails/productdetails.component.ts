@@ -9,7 +9,7 @@ import { CartItem, foodCard } from '../../core/models/interface/Idata';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { FormsModule } from '@angular/forms';
 import { EncryptionService } from '../../core/services/encryption.service';
-import { ModalComponent } from "../../modal/modal.component";
+import { ModalComponent } from "../../Reuseable component/modal/modal.component";
 
 @Component({
   selector: 'app-productdetails',
