@@ -26,16 +26,17 @@
               <span class="qty-value">{{productQuantity}}</span>
               <button class="qty-btn" (click)="increaseQuantity()">+</button>
             </div>
-            <button class="btn btn-outline-danger me-2" routerLink="/cart">ORDER NOW</button>
-            <button class="btn btn-outline-danger" (click)="addToCart()">ADD TO CART</button>
-            @if(CartServ.showmodal()) {
+            <button class="btnsecondary me-2"(click)="addToCart()" routerLink="/cart">ORDER NOW</button>
+            <button class="btnsecondary" (click)="addToCart()">ADD TO CART</button>
+            <!-- @if(CartServ.showmodal()) {
             <app-modal>
               <p class="text-center text-danger fw-bold">
                 This product is already in your cart!
               </p>
             </app-modal>
-            }
-            @else if (CartServ.itemadded()) {
+            } -->
+            <!-- @else -->
+            @if (CartServ.itemadded()) {
             <app-modal>
               <p class="text-center text-success fw-bold">
                 Product added to cart successfully!

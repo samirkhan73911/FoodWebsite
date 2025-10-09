@@ -171,3 +171,9 @@ body {
 .comment-form button:hover {
   background-color: #d75b3a;
 }
+.input:focus-visible{
+  outline: none;
+}
+.input{
+  margin:0 !important;
+}

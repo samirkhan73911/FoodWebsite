@@ -9,12 +9,12 @@ export class CartService {
   showmodal=signal<boolean>(false);
   itemadded=signal<boolean>(false);
  cartItems = signal<CartItem[]>([]);
-  // computed signal for total
-  total = computed(() =>
+
+  subtotal = computed(() =>
     this.cartItems().reduce((sum, i) => sum + i.price * i.quantity, 0)
   );
 
-  // computed signal for item count
+  
   count = computed(() =>
     this.cartItems().reduce((sum, i) => sum + i.quantity, 0)
   );
@@ -24,7 +24,8 @@ export class CartService {
     const existing = items.find(i => i.id === item.id);
 
     if (existing) {
-      this.showmodal.set(true);
+      existing.quantity += 1;
+       this.itemadded.set(true);
 
     } else {
       items.push(item);

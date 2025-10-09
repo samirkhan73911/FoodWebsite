@@ -71,6 +71,7 @@ export class ProductdetailsComponent {
 
  increaseQuantity() {
     this.productQuantity++;
+
  
   }
 

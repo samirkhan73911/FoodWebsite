@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {  RouterLink, RouterLinkActive } from '@angular/router';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CartService } from '../../core/services/cart.service';
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -10,4 +11,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 })
 export class HeaderComponent {
 
+  constructor(public  cartsrv:CartService) { }
+  // count(){
+  //   return this.cartsrv.count();
+  // }
 }

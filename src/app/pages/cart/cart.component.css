@@ -192,12 +192,20 @@
   /* box-shadow: 0 0 0 2px var(--main-theme-color); */
 }
 
+.required_field{
+  margin-top: -25px;
+  margin-bottom: 10px;
+ 
+}
 .payment-option img {
   max-width: 60%;
   max-height: 60%;
 }
 
-
+.cart-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 @media  (992px > width){
 .cart-btn{
