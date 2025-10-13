@@ -19,10 +19,20 @@ export class CardServiceService {
   }
 
   getProductById(id: number): Observable<foodCard> {
+     if (environment.production) {
+      return this.http.get<any>(`${API_URL.baseUrl}`).pipe(
+        map(data => data.menu.find((item: foodCard) => item.id === id))
+      );
+    }
     return this.http.get<foodCard>(`${API_URL.baseUrl}${API_URL.endpoints.menu}/${id}`);
   }
 
   getBlogById(id: number): Observable<Blogcard> {
+      if (environment.production) {
+      return this.http.get<any>(`${API_URL.baseUrl}`).pipe(
+        map(data => data.blog.find((item: Blogcard) => item.id === id))
+      );
+    }
     return this.http.get<Blogcard>(`${API_URL.baseUrl}${API_URL.endpoints.blogs}/${id}`);
   }
 
