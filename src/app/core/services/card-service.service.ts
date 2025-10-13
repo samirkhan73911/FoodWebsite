@@ -26,7 +26,7 @@ export class CardServiceService {
     return this.http.get<Blogcard>(`${API_URL.baseUrl}${API_URL.endpoints.blogs}/${id}`);
   }
 
-  getPopular(): Observable<Popular[]> {
+  getpopular(): Observable<Popular[]> {
     if (environment.production) {
       return this.http.get<any>(`${API_URL.baseUrl}`).pipe(map(data => data.popular));
     }
